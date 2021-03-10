@@ -1,0 +1,3 @@
+configuration
+maxLineLength
+	^ 100

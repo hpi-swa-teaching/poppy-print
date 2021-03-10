@@ -1,0 +1,4 @@
+accessing
+rawContents
+
+	^ stream contents

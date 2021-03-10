@@ -1,0 +1,14 @@
+{
+	"category" : "PoppyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PPPrecedenceVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

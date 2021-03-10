@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfPoppyPrint",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfPoppyPrint",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
