@@ -4,7 +4,7 @@ SmalltalkCISpec {
       #baseline : 'PoppyPrint',
       #platforms : [ #squeak ],
       #directory: 'packages',
-	  #useLatestMetacello : true
+	  #load : [ 'tests' ]
     }
   ],
   #testing : {
