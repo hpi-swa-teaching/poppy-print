@@ -1,0 +1,16 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'PoppyPrint',
+      #platforms : [ #squeak ],
+      #directory: 'packages',
+	  #useLatestMetacello : true
+    }
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ 'PoppyPrint' ],
+      #format : #coveralls
+    }
+  }
+}

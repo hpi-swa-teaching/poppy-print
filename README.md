@@ -2,6 +2,11 @@
 
 A small, opinionated pretty printer for Squeak/Smalltalk.
 
+### Install
+```
+Metacello new baseline: 'PoppyPrint'; repository: 'github://tom95/poppy-print'; load.
+```
+
 ### Example
 
 ```
