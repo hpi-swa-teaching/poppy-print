@@ -2,6 +2,8 @@
 
 A small, opinionated pretty printer for Squeak/Smalltalk. Tested with Squeak6-trunk and Squeak5.3.
 
+> NOTE: this is a beta release. The printer may accidentally produce malformed code at this point. Please report any misbehavior you notice.
+
 ### Install
 ```smalltalk
 Metacello new baseline: 'PoppyPrint'; repository: 'github://tom95/poppy-print'; load.
