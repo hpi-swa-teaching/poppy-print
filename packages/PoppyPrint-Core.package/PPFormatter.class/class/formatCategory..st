@@ -1,5 +1,4 @@
 format
 formatCategory: aString
 
-	(self systemOrganizer classesIn: aString) do: [:class |
-		self formatClass: class]
+	(SystemOrganizer default classesIn: aString) do: [:class | self formatClass: class]

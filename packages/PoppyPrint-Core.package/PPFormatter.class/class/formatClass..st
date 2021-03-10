@@ -1,5 +1,7 @@
 format
 formatClass: aClass
 
-	aClass methodsDo: [:m |
-		aClass compile: (self formatString: m getSourceFromFile class: aClass noPattern: false)]
+	aClass methodsDo: [:m | self formatMethod: m].
+	
+	" if we're not already doing a class side, automatically do the clas side as well "
+	aClass isMeta ifFalse: [aClass theMetaClass methodsDo: [:m | self formatMethod: m]]

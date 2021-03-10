@@ -1,3 +1,4 @@
 helper
-precedenceOf: aNode 
+precedenceOf: aNode
+
 	^ aNode accept: PPPrecedenceVisitor new

@@ -1,4 +1,4 @@
 visiting
-visitInstanceVariableNode: aNode 
+visitInstanceVariableNode: aNode
 
 	stream nextPutAll: aNode name

@@ -1,3 +1,4 @@
 printing
-indent: aNumber 
+indent: aNumber
+
 	indent := aNumber

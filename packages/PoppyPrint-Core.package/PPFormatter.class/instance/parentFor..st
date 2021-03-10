@@ -1,3 +1,4 @@
 helper
-parentFor: aNode 
+parentFor: aNode
+
 	^ parents at: aNode ifAbsent: [nil]

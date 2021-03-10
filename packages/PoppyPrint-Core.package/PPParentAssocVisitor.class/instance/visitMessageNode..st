@@ -5,4 +5,4 @@ visitMessageNode: aNode
 	aNode originalArguments do: [:arg | parents at: arg put: aNode].
 	
 	aNode originalReceiver accept: self.
-	aNode originalArguments do: [:argument| argument accept: self]
+	aNode originalArguments do: [:argument | argument accept: self]

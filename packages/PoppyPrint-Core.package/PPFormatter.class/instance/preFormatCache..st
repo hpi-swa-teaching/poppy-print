@@ -1,3 +1,4 @@
 accessing
-preFormatCache: aDictionary 
+preFormatCache: aDictionary
+
 	preFormatCache := aDictionary

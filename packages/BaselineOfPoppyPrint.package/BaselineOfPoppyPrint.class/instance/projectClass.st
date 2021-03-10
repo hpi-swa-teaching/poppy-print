@@ -1,5 +1,4 @@
 baseline
 projectClass
-	^ Smalltalk
-		at: #MetacelloCypressBaselineProject
-		ifAbsent: [super projectClass]
+
+	^ Smalltalk at: #MetacelloCypressBaselineProject ifAbsent: [super projectClass]

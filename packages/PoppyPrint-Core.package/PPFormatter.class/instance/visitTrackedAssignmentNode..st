@@ -1,3 +1,4 @@
 visiting
-visitTrackedAssignmentNode: aNode 
+visitTrackedAssignmentNode: aNode
+
 	self visitAssignmentNode: aNode

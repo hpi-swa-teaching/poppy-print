@@ -1,0 +1,1 @@
+Sadly, the built-in Parser adds some nodes to make compilation easier. We override methods that do this to keep the produced AST as it corresponds to the actual input. Further, comments aren't added to the relevant nodes at all places, which we fix here as well.

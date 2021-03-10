@@ -5,6 +5,6 @@ visitCascadeNode: aNode
 	self
 		indent: 1
 		around: [
-			aNode messages do: [:message | 
+			aNode messages do: [:message |
 				self newLine.
 				self visitNode: message] separatedBy: [stream nextPut: $;]]

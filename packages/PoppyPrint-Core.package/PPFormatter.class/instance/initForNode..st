@@ -1,3 +1,4 @@
 initialize-release
-initForNode: aNode 
+initForNode: aNode
+
 	parents := PPParentAssocVisitor getParentsFrom: aNode

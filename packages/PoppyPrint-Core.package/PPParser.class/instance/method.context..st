@@ -1,5 +1,5 @@
 expression types
-method: doit context: ctxt 
+method: doit context: ctxt
 	" pattern [ | temporaries ] block => MethodNode."
 
 	| sap blk prim temps messageComment methodNode |
@@ -19,8 +19,7 @@ method: doit context: ctxt
 	
 	"THIS WE REMOVED: doit ifTrue: [blk returnLast]
 		ifFalse: [blk returnSelfIfNoOther: encoder]."
-	
-	hereType == #doIt ifFalse: [^self expected: 'Nothing more'].
+	hereType == #doIt ifFalse: [^ self expected: 'Nothing more'].
 	methodNode := self newMethodNode comment: messageComment.
 	methodNode
 		selector: (sap at: 1)
@@ -31,7 +30,7 @@ method: doit context: ctxt
 		encoder: encoder
 		primitive: prim
 		properties: properties.
-	self interactive ifTrue:
-		[self declareUndeclaredTemps: methodNode.
-		 self removeUnusedTemps: methodNode].
-	^methodNode
+	self interactive ifTrue: [
+		self declareUndeclaredTemps: methodNode.
+		self removeUnusedTemps: methodNode].
+	^ methodNode
