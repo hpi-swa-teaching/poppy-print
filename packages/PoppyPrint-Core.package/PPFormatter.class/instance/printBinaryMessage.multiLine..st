@@ -5,5 +5,5 @@ printBinaryMessage: aNode multiLine: multiLine
 	stream
 		nextPutAll: aNode originalSelector;
 		space.
-	self indent: (multiLine ifTrue: [1] ifFalse: [0]) around: [self visitNode: aNode arguments first].
+	self indent: (multiLine ifTrue: [1] ifFalse: [0]) around: [self visitNode: aNode originalArguments first].
 	^ self

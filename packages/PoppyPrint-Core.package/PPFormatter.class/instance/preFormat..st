@@ -6,6 +6,7 @@ preFormat: aNode
 		formatter := self class new.
 		formatter parents: parents.
 		formatter indent: indent.
+		formatter comments: comments veryDeepCopy.
 		formatter preFormatCache: preFormatCache copy.
 		aNode accept: formatter.
 		{formatter rawContents. indent}]) first
