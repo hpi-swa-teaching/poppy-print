@@ -2,18 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
-		"canFormat:" : "tobe 3/10/2021 14:58",
+		"canFormat:" : "tobe 3/10/2021 15:28",
 		"testCommentAtStartOfBlock" : "tobe 3/10/2021 14:58",
 		"testCommentBetweenEmptyLines" : "tobe 3/10/2021 14:58",
 		"testCommentOrder" : "tobe 3/10/2021 14:58",
 		"testComments" : "tobe 3/10/2021 14:58",
 		"testEmptyMethod" : "tobe 3/10/2021 14:58",
 		"testKeepEmptyLines" : "tobe 3/10/2021 14:58",
+		"testMultilineComment" : "tobe 3/10/2021 15:03",
 		"testMultilineString" : "tobe 3/10/2021 14:58",
 		"testMultilineStringWithIndent" : "tobe 3/10/2021 14:58",
 		"testMultipleComments" : "tobe 3/10/2021 14:58",
 		"testNestedComments" : "tobe 3/10/2021 14:58",
 		"testNestedKeywordSend" : "tobe 3/10/2021 14:58",
+		"testOnlyLastArgumentIsLong" : "tobe 3/10/2021 15:27",
 		"testPragmas" : "tobe 3/10/2021 14:58",
 		"testSubexpressionComment" : "tobe 3/10/2021 14:58",
 		"testTrailingComment" : "tobe 3/10/2021 14:58" } }
