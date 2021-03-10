@@ -6,7 +6,7 @@ A small, opinionated pretty printer for Squeak/Smalltalk. Tested with Squeak6-tr
 
 ### Install
 ```smalltalk
-Metacello new baseline: 'PoppyPrint'; repository: 'github://tom95/poppy-print'; load.
+Metacello new baseline: 'PoppyPrint'; repository: 'github://tom95/poppy-print/packages'; load.
 ```
 
 If you want to use Poppy Print instead of the default pretty printer, run:
