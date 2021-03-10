@@ -1,6 +1,6 @@
 # Poppy Print
 
-A small, opinionated pretty printer for Squeak/Smalltalk.
+A small, opinionated pretty printer for Squeak/Smalltalk. Tested with Squeak6-trunk and Squeak5.3.
 
 ### Install
 ```smalltalk
