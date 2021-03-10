@@ -9,4 +9,7 @@ b
 c
 d'']'.
 	
-	self assert: string equals: (PPFormatter formatString: string class: UndefinedObject noPattern: false)
+	self assert: string equals: (PPFormatter
+		formatString: string
+		class: UndefinedObject
+		noPattern: false)

@@ -19,13 +19,9 @@ reindent: aStringAndIndentPair
 	currentIndent := aStringAndIndentPair second.
 	currentIndent ~= indent ifTrue: [ | lines |
 		lines := text lines.
-		2
-			to: lines size
-			do: [:index |
-				lines
-					at: index
-					put: (currentIndent > indent
-						ifTrue: [(lines at: index) allButFirst: currentIndent - indent]
-						ifFalse: [(String new: indent - currentIndent withAll: Character tab), (lines at: index)])].
+		2 to: lines size do: [:index |
+			lines at: index put: (currentIndent > indent
+				ifTrue: [(lines at: index) allButFirst: currentIndent - indent]
+				ifFalse: [(String new: indent - currentIndent withAll: Character tab), (lines at: index)])].
 		text := lines joinSeparatedBy: Character cr].
 	^ text
