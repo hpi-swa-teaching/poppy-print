@@ -7,6 +7,13 @@ A small, opinionated pretty printer for Squeak/Smalltalk.
 Metacello new baseline: 'PoppyPrint'; repository: 'github://tom95/poppy-print'; load.
 ```
 
+If you want to use Poppy Print instead of the default pretty printer, run:
+```smalltalk
+Behavior compile: 'prettyPrinterClass ^ PPFormatter'.
+" undo: "
+Behavior compile: 'prettyPrinterClass ^ self compilerClass'.
+```
+
 ### Example
 
 ```smalltalk
