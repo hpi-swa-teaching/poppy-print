@@ -11,7 +11,7 @@ codeWithEmptyLineMarkers
 		stream nextPut: 1.
 		ranges overlappingPairsDo: [:first :second |
 			(first size = 1 and: [
-				(self at: first start) = $. and: [((self viewFrom: first stop + 1 to: second start) occurrencesOf: Character cr) > 1]]) ifTrue: [
+				(self at: first start) = $. and: [((self copyFrom: first stop + 1 to: second start) occurrencesOf: Character cr) > 1]]) ifTrue: [
 				stream nextPut: ((self viewFrom: first stop + 1 to: second start) lastIndexOf: Character cr) + first stop]]].
 	
 	write := '' writeStream.
