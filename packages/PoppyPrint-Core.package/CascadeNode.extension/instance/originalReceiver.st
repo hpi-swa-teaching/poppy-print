@@ -1,0 +1,4 @@
+*PoppyPrint-Core
+originalReceiver
+
+	^ receiver
