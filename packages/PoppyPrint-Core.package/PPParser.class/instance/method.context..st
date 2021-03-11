@@ -21,8 +21,12 @@ method: doit context: ctxt
 	self statements: #() innerBlock: false blockNode: BlockNode new.
 	blk := parseNode.
 	
-	"THIS WE REMOVED: doit ifTrue: [blk returnLast]
-		ifFalse: [blk returnSelfIfNoOther: encoder]."
+	"CHANGE"
+	self includeGenerated ifTrue: [
+		doit ifTrue: [blk returnLast]
+			ifFalse: [blk returnSelfIfNoOther: encoder]].
+	"END CHANGE"
+	
 	hereType == #doIt ifFalse: [^ self expected: 'Nothing more'].
 	methodNode := self newMethodNode comment: messageComment.
 	methodNode

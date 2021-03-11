@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "tobe 3/10/2021 14:48",
 	"instvars" : [
-		 ],
+		"includeGenerated" ],
 	"name" : "PPParser",
 	"pools" : [
 		 ],
