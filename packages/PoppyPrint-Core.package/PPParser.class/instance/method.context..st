@@ -9,9 +9,13 @@ method: doit context: ctxt
 	encoder selector: (sap at: 1).
 	(sap at: 2) do: [:argNode | argNode beMethodArg].
 	doit ifFalse: [self pragmaSequence].
-	temps := self temporaries.
+	
+	" CHANGE: first pop comments, then parse temporaries "
 	messageComment := currentComment.
 	currentComment := nil.
+	" END CHANGE "
+	
+	temps := self temporaries.
 	doit ifFalse: [self pragmaSequence].
 	prim := self pragmaPrimitives.
 	self statements: #() innerBlock: false blockNode: BlockNode new.

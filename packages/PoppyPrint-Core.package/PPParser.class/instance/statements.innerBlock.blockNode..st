@@ -27,10 +27,8 @@ statements: argNodes innerBlock: inner blockNode: theBlockNode
 						ifFalse: [
 							self addComment.
 							"THIS IS REMOVED
-																																stmts size = 0 ifTrue: 
-																																	[stmts addLast: 
-																																		(encoder encodeVariable:
-																																			(inner ifTrue: ['nil'] ifFalse: ['self']))]"]].
+							stmts size = 0 ifTrue: [
+								stmts addLast: (encoder encodeVariable: (inner ifTrue: ['nil'] ifFalse: ['self']))]"]].
 			returns ifTrue: [
 				self match: #period.
 				(hereType == #rightBracket or: [hereType == #doIt]) ifFalse: [^ self expected: 'End of block']].
