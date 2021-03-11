@@ -1,6 +1,7 @@
 printing
 needsParenthesisFor: aNode
 
+	| outerPrecedence precedence |
 	self example: 'simple' receiver: [PPFormatter new] args: [
 		{
 			(Parser new
@@ -18,5 +19,9 @@ needsParenthesisFor: aNode
 	(aNode isMessage and: [aNode originalSelector isUnary]) ifTrue: [^ false].
 	(((self parentFor: aNode) isKindOf: CascadeNode) and: [
 		aNode isMessage and: [aNode originalSelector isUnary not and: [(self parentFor: aNode) originalReceiver = aNode]]]) ifTrue: [^ true].
-	(self precedenceOf: aNode) < (self precedenceOf: (self parentFor: aNode)) ifTrue: [^ false].
+	
+	precedence := self precedenceOf: aNode.
+	outerPrecedence := self precedenceOf: (self parentFor: aNode).
+	(precedence > outerPrecedence or: [precedence = 3 and: [outerPrecedence = 3]]) ifFalse: [^ false].
+	
 	^ true
