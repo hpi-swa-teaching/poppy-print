@@ -5,6 +5,7 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 	self example: 'string test' receiver: [PPFormatter] args: [{'self halt; yourself'. UndefinedObject. true. nil}].
 	
 	methodNode := PPParser new
+		encoderClass: PPFormatEncoder;
 		parse: aString string codeWithEmptyLineMarkers
 		class: aClass
 		noPattern: aBoolean

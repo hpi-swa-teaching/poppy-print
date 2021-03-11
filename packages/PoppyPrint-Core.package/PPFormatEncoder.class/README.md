@@ -1,0 +1,1 @@
+The default Encoder will reuse literals where appropriate. However, as we associate comments with nodes, this will lead to disaster where new comments are attached to the same instance of an already found node. This subclass of Encoder will always create fresh ParseNode instances.

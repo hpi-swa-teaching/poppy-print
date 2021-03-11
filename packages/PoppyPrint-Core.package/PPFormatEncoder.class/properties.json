@@ -1,0 +1,14 @@
+{
+	"category" : "PoppyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "tobe 3/11/2021 08:45",
+	"instvars" : [
+		 ],
+	"name" : "PPFormatEncoder",
+	"pools" : [
+		 ],
+	"super" : "Encoder",
+	"type" : "normal" }

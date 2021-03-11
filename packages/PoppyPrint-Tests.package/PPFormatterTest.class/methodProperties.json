@@ -2,13 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"canFormat:" : "tobe 3/10/2021 15:28",
+		"canFormat:" : "tobe 3/11/2021 08:54",
+		"exampleMorphDoLayoutIn" : "tobe 3/11/2021 08:54",
 		"testCommentAtStartOfBlock" : "tobe 3/10/2021 14:58",
 		"testCommentBetweenEmptyLines" : "tobe 3/10/2021 14:58",
 		"testCommentOrder" : "tobe 3/10/2021 14:58",
 		"testComments" : "tobe 3/10/2021 14:58",
 		"testEmptyMethod" : "tobe 3/10/2021 14:58",
 		"testKeepEmptyLines" : "tobe 3/10/2021 14:58",
+		"testMorphDoLayoutIn" : "tobe 3/11/2021 08:54",
 		"testMultilineComment" : "tobe 3/10/2021 15:03",
 		"testMultilineString" : "tobe 3/10/2021 15:51",
 		"testMultilineStringWithIndent" : "tobe 3/10/2021 15:51",
