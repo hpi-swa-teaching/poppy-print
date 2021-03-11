@@ -1,0 +1,14 @@
+{
+	"category" : "PoppyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "tobe 3/11/2021 09:56",
+	"instvars" : [
+		 ],
+	"name" : "PPOriginalEnumerator",
+	"pools" : [
+		 ],
+	"super" : "ParseNodeEnumerator",
+	"type" : "normal" }

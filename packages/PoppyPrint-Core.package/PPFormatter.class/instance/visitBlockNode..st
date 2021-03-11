@@ -15,17 +15,15 @@ visitBlockNode: aNode
 		statements := aNode statements.
 		startWithNewLine ifTrue: [self newLine].
 		
-		self popCurrentComments: true.
+		self printBlockComment: aNode.
 		statements do: [:statement |
 			(statement isLiteralNode and: [statement key = #ppEmptyLine])
-				ifTrue: [
-					self addCommentsOf: statement.
-					self newLine]
+				ifTrue: [self newLine]
 				ifFalse: [
 					self visitNode: statement.
-					(statement ~= statements last or: [comments notEmpty]) ifTrue: [
+					statement ~= statements last ifTrue: [
 						stream nextPut: $..
 						self newLine]].
-			self popCurrentComments: statement ~= statements last]].
+			self printAllCommentsOf: statement lastStatement: statement = statements last]].
 	
 	isMethodBlock ifFalse: [stream nextPut: $]]
