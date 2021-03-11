@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"sanityCheck" : "tobe 3/11/2021 13:11",
+		"sanityCheck:" : "tobe 3/11/2021 11:55" },
 	"instance" : {
 		"canFormat:" : "tobe 3/11/2021 10:09",
+		"canFormat:as:" : "tobe 3/11/2021 12:24",
 		"exampleExplorerContents" : "tobe 3/11/2021 10:20",
 		"exampleMorphDoLayoutIn" : "tobe 3/11/2021 09:00",
 		"testBinaryMessageChain" : "tobe 3/11/2021 10:58",
@@ -12,9 +14,13 @@
 		"testComments" : "tobe 3/10/2021 14:58",
 		"testEmptyLineInArray" : "tobe 3/11/2021 10:45",
 		"testEmptyLineInCaseOf" : "tobe 3/11/2021 10:54",
+		"testEmptyLinesBetweenComments" : "tobe 3/11/2021 11:35",
 		"testEmptyMethod" : "tobe 3/10/2021 14:58",
+		"testGithubIssue7" : "tobe 3/11/2021 11:15",
+		"testInlineCommentWithNewline" : "tobe 3/11/2021 13:17",
 		"testKeepEmptyLines" : "tobe 3/10/2021 14:58",
 		"testLongArray" : "tobe 3/11/2021 10:38",
+		"testMethodCommentWithTemporaries" : "tobe 3/11/2021 11:40",
 		"testMorphDoLayoutIn" : "tobe 3/11/2021 08:54",
 		"testMultilineComment" : "tobe 3/10/2021 15:03",
 		"testMultilineString" : "tobe 3/10/2021 15:51",
@@ -24,10 +30,13 @@
 		"testNestedKeywordSend" : "tobe 3/10/2021 14:58",
 		"testNestedTrailingComment" : "tobe 3/11/2021 10:16",
 		"testOnlyLastArgumentIsLong" : "tobe 3/10/2021 15:27",
+		"testParenthesisAroundReceiver" : "tobe 3/11/2021 13:07",
 		"testPragmas" : "tobe 3/10/2021 15:51",
 		"testReindentMultilineComment" : "tobe 3/11/2021 10:08",
 		"testShortArray" : "tobe 3/11/2021 10:41",
 		"testShortCaseOf" : "tobe 3/11/2021 10:40",
 		"testSubexpressionComment" : "tobe 3/11/2021 10:08",
+		"testTemporaries" : "tobe 3/11/2021 11:39",
 		"testTooLongLine" : "tobe 3/11/2021 09:21",
-		"testTrailingComment" : "tobe 3/11/2021 10:08" } }
+		"testTrailingComment" : "tobe 3/11/2021 10:08",
+		"testTwoTrailingComments" : "tobe 3/11/2021 12:24" } }

@@ -6,7 +6,7 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 	
 	methodNode := PPParser new
 		encoderClass: PPFormatEncoder;
-		parse: aString string codeWithEmptyLineMarkers
+		parse: (aString string codeWithEmptyLineMarkersNoPattern: aBoolean)
 		class: aClass
 		noPattern: aBoolean
 		notifying: anObject

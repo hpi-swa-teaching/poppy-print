@@ -1,5 +1,5 @@
 encoding
-encodeVariable: name sourceRange: range ifUnknown: action
+autoBind: name
 
 	" instead of looking up variables and possibly returning the already existing node, always answer a fresh node "
-	^ self global: name name: name
+	^ self newTemp: name

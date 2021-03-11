@@ -17,8 +17,9 @@ needsParenthesisFor: aNode
 	aNode isBlockNode ifTrue: [^ false].
 	((self parentFor: aNode) isBlockNode or: [(self parentFor: aNode) isBraceNode]) ifTrue: [^ false].
 	(aNode isMessage and: [aNode originalSelector isUnary]) ifTrue: [^ false].
+	
 	(((self parentFor: aNode) isKindOf: CascadeNode) and: [
-		aNode isMessage and: [aNode originalSelector isUnary not and: [(self parentFor: aNode) originalReceiver = aNode]]]) ifTrue: [^ true].
+		(aNode isKindOf: CascadeNode) or: [aNode isMessage and: [aNode originalSelector isUnary not and: [(self parentFor: aNode) originalReceiver = aNode]]]]) ifTrue: [^ true].
 	
 	precedence := self precedenceOf: aNode.
 	outerPrecedence := self precedenceOf: (self parentFor: aNode).
