@@ -2,8 +2,6 @@ printing
 visitNode: aNode
 
 	| needsParens |
-	self addCommentsOf: aNode.
-	
 	needsParens := self needsParenthesisFor: aNode.
 	needsParens ifTrue: [stream nextPut: $(].
 	
