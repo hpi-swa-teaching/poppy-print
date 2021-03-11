@@ -5,4 +5,6 @@ testNestedTrailingComment
 
 	| filteredEvent |
 	owner ifNil: [^ unfilteredEvent
-	"not necessary but good style -- see Morph >> #handleEvent:"]'
+	"not necessary but good style -- see Morph >> #handleEvent:"].
+	
+	^ unfilteredEvent'

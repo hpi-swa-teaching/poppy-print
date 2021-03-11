@@ -17,7 +17,7 @@
 		"testMultipleComments" : "tobe 3/11/2021 10:08",
 		"testNestedComments" : "tobe 3/10/2021 14:58",
 		"testNestedKeywordSend" : "tobe 3/10/2021 14:58",
-		"testNestedTrailingComment" : "tobe 3/11/2021 10:07",
+		"testNestedTrailingComment" : "tobe 3/11/2021 10:16",
 		"testOnlyLastArgumentIsLong" : "tobe 3/10/2021 15:27",
 		"testPragmas" : "tobe 3/10/2021 15:51",
 		"testReindentMultilineComment" : "tobe 3/11/2021 10:08",
