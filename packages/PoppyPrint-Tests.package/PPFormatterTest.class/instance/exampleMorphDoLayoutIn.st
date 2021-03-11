@@ -1,10 +1,11 @@
 examples
 exampleMorphDoLayoutIn
 	"Example code taken from Morph>>doLayoutIn:"
-	"0) Quick return. No children means no effect in layout policies. Use #minWidth and #minHeight to implement #shrinkWrap for morphs without submorphs."
 
 	| box priorBounds fullBounds layoutBounds |
 	layoutBounds := 0.
+	
+	"0) Quick return. No children means no effect in layout policies. Use #minWidth and #minHeight to implement #shrinkWrap for morphs without submorphs."
 	self hasSubmorphs ifFalse: [^ fullBounds := self outerBounds].
 	
 	"X.1) Prepare redraw. Testing for #bounds or #layoutBounds would be sufficient to figure out if we need an invalidation afterwards but #outerBounds is what we need for all leaf nodes so we use that"

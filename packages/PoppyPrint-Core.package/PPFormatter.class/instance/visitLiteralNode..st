@@ -2,5 +2,5 @@ visiting
 visitLiteralNode: aNode
 
 	aNode key isString
-		ifTrue: [(aNode key copy replaceAll: Character cr with: (Character value: 0)) storeOn: stream]
+		ifTrue: [(self prepareMultilineLiteral: aNode key) storeOn: stream]
 		ifFalse: [aNode key printAsLiteralOn: stream]

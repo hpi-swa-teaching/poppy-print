@@ -2,5 +2,4 @@ helper
 addCommentsOf: aNode
 
 	^ aNode comment ifNotNil: [
-		comments addAll: aNode comment.
-		aNode comment: nil]
+		comments addAll: (aNode comment collect: [:c | self prepareMultilineLiteral: c])]

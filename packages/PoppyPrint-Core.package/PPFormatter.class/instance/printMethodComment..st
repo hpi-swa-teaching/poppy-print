@@ -5,5 +5,5 @@ printMethodComment: aNode
 		aNode comment do: [:comment |
 			stream crtab: 1.
 			stream nextPut: $".
-			stream nextPutAll: comment.
+			stream nextPutAll: (self prepareMultilineLiteral: comment).
 			stream nextPut: $"]]

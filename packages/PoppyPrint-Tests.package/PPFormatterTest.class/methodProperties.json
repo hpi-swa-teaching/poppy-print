@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"canFormat:" : "tobe 3/11/2021 08:54",
-		"exampleMorphDoLayoutIn" : "tobe 3/11/2021 08:54",
+		"exampleMorphDoLayoutIn" : "tobe 3/11/2021 09:00",
 		"testCommentAtStartOfBlock" : "tobe 3/10/2021 14:58",
 		"testCommentBetweenEmptyLines" : "tobe 3/10/2021 14:58",
 		"testCommentOrder" : "tobe 3/10/2021 14:58",
@@ -19,5 +19,6 @@
 		"testNestedKeywordSend" : "tobe 3/10/2021 14:58",
 		"testOnlyLastArgumentIsLong" : "tobe 3/10/2021 15:27",
 		"testPragmas" : "tobe 3/10/2021 15:51",
+		"testReindentMultilineComment" : "tobe 3/11/2021 09:10",
 		"testSubexpressionComment" : "tobe 3/10/2021 15:51",
 		"testTrailingComment" : "tobe 3/10/2021 14:58" } }
