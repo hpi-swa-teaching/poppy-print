@@ -9,6 +9,8 @@
 		"testCommentBetweenEmptyLines" : "tobe 3/10/2021 14:58",
 		"testCommentOrder" : "tobe 3/10/2021 14:58",
 		"testComments" : "tobe 3/10/2021 14:58",
+		"testEmptyLineInArray" : "tobe 3/11/2021 10:45",
+		"testEmptyLineInCaseOf" : "tobe 3/11/2021 10:54",
 		"testEmptyMethod" : "tobe 3/10/2021 14:58",
 		"testKeepEmptyLines" : "tobe 3/10/2021 14:58",
 		"testLongArray" : "tobe 3/11/2021 10:38",

@@ -14,7 +14,7 @@ visitBlockNode: aNode
 		
 		self printBlockComment: aNode.
 		aNode statements do: [:statement |
-			(statement isLiteralNode and: [statement key = #ppEmptyLine])
+			(self isEmptyLineMarker: statement)
 				ifTrue: [self newLine]
 				ifFalse: [
 					self visitNode: statement.
