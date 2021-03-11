@@ -6,6 +6,6 @@ testCommentAtStartOfBlock
 	self halt.
 	self do: [:a |
 		" start comment "
-		self halt.
+		self halt
 		" end comment "].
 	self halt'

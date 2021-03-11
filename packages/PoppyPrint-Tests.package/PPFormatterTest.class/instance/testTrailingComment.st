@@ -5,5 +5,5 @@ testTrailingComment
 
 	self halt.
 	" start comment "
-	self halt.
+	self halt
 	" end comment "'

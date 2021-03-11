@@ -6,7 +6,7 @@ testReindentMultilineComment
 	self halt.
 	b ifTrue: [
 		a ifTrue: [
-			self halt.
+			self halt
 			" start comment
 					continue comment
 					here"]].
