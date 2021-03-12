@@ -12,7 +12,7 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 		notifying: anObject
 		ifFail: nil.
 	
-	node := aBoolean ifTrue: [methodNode body statements first expr] ifFalse: [methodNode].
+	node := aBoolean ifTrue: [methodNode body statements first] ifFalse: [methodNode].
 	formatter := self new initForNode: node.
 	node accept: formatter.
 	^ formatter contents
