@@ -1,7 +1,7 @@
 format
 formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 
-	| formatter node methodNode |
+	| formatter methodNode |
 	self example: 'string test' receiver: [PPFormatter] args: [{'self halt; yourself'. UndefinedObject. true. nil}].
 	
 	methodNode := PPParser new
@@ -12,7 +12,6 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 		notifying: anObject
 		ifFail: nil.
 	
-	node := aBoolean ifTrue: [methodNode body statements first] ifFalse: [methodNode].
-	formatter := self new initForNode: node.
-	node accept: formatter.
-	^ formatter contents
+	formatter := self new initForNode: methodNode.
+	methodNode accept: formatter.
+	^ aBoolean ifTrue: [self stripMethodPattern: formatter contents] ifFalse: [formatter contents]
