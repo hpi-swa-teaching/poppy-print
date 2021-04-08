@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testCommentStartOfMethodBody
 
 	self assert: 13 equals: (PPParser new startOfMethodBody: 'do: "abc" abc 2 + 2')
