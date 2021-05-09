@@ -1,7 +1,7 @@
 {
 	"category" : "PoppyPrint-Core",
 	"classinstvars" : [
-		 ],
+		"doesFormatOnSave" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "tobe 3/11/2021 09:06",
