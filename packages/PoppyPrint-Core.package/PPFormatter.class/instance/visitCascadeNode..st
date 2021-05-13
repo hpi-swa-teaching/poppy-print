@@ -6,5 +6,7 @@ visitCascadeNode: aNode
 		aNode messages
 			do: [:message |
 				self newLine.
-				self visitNode: message]
-			separatedBy: [stream nextPut: $;]]
+				(self isEmptyLineMarker: message)
+					ifFalse: [
+						self visitNode: message.
+						(message ~= aNode messages last) ifTrue: [stream nextPut: $;]]]]
