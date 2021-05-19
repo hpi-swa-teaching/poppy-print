@@ -20,11 +20,9 @@ method: doit context: ctxt
 	prim := self pragmaPrimitives.
 	self statements: #() innerBlock: false blockNode: BlockNode new.
 	blk := parseNode.
-	
 	"CHANGE"
-	self includeGenerated ifTrue: [
-		doit ifTrue: [blk returnLast]
-			ifFalse: [blk returnSelfIfNoOther: encoder]].
+	
+	self includeGenerated ifTrue: [doit ifTrue: [blk returnLast] ifFalse: [blk returnSelfIfNoOther: encoder]].
 	"END CHANGE"
 	
 	hereType == #doIt ifFalse: [^ self expected: 'Nothing more'].

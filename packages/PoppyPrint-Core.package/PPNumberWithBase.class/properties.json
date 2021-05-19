@@ -1,0 +1,15 @@
+{
+	"category" : "PoppyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"number",
+		"base" ],
+	"name" : "PPNumberWithBase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
