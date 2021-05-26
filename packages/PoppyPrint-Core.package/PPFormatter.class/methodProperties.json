@@ -1,5 +1,9 @@
 {
 	"class" : {
+		"doFormatOnSave" : "chrrau 5/9/2021 16:43",
+		"doesFormatOnSave" : "chrrau 5/9/2021 16:40",
+		"doesFormatOnSave:" : "chrrau 5/9/2021 16:40",
+		"dontFormatOnSave" : "chrrau 5/9/2021 16:43",
 		"example:receiver:args:" : "tobe 3/10/2021 14:59",
 		"format:in:notifying:" : "tobe 3/10/2021 15:46",
 		"format:in:notifying:decorated:" : "tobe 3/10/2021 15:45",
@@ -9,6 +13,8 @@
 		"formatPackage:" : "tobe 3/10/2021 14:59",
 		"formatString:class:noPattern:" : "tobe 3/10/2021 15:47",
 		"formatString:class:noPattern:notifying:" : "tobe 3/20/2021 10:44",
+		"methodAdded:" : "chrrau 5/9/2021 16:45",
+		"methodModified:" : "chrrau 5/9/2021 16:44",
 		"stripMethodPattern:" : "tobe 3/19/2021 18:51" },
 	"instance" : {
 		"contents" : "tobe 3/10/2021 14:58",
