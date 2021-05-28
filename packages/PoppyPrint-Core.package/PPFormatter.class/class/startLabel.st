@@ -1,4 +1,4 @@
 helper
 startLabel
 
-	^ '"startNonFormatting"'
+	^ 'startNonFormatting'

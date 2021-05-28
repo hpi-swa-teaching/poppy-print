@@ -1,4 +1,4 @@
 helper
 stopLabel
 
-	^ '"stopNonFormatting"'
+	^ 'stopNonFormatting'
