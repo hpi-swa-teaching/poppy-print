@@ -8,6 +8,6 @@ formatMethod: aMethod
 	originalLabelPositions := self findAllNonFormattingLabels: originalSource.
 	formattedLabelPositions := self findAllNonFormattingLabels: formattedSource.
 	
-	formattedSource := self combineStringsWithDicts: formattedSource and: originalSource dict1: formattedLabelPositions dict2: originalLabelPositions.
+	formattedSource := self combineStringsUsingDicts: formattedSource and: originalSource firstLabels: formattedLabelPositions secondLabels: originalLabelPositions.
 	
 	originalSource ~= formattedSource ifTrue: [aMethod methodClass compile: formattedSource]
