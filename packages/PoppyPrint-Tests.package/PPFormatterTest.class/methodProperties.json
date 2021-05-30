@@ -25,6 +25,7 @@
 		"testGithubIssue7" : "tobe 3/11/2021 11:15",
 		"testInlineCommentWithNewline" : "tobe 3/11/2021 13:17",
 		"testKeepEmptyLines" : "tobe 3/10/2021 14:58",
+		"testLinesInCascade" : "JD 5/30/2021 15:49",
 		"testLongArray" : "tobe 3/11/2021 10:38",
 		"testMethodCommentWithTemporaries" : "tobe 3/11/2021 11:40",
 		"testMorphDoLayoutIn" : "tobe 3/11/2021 08:54",
