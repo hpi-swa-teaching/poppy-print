@@ -12,5 +12,3 @@ doFormatOnSave
 		ofSystemChangesOfItem: #method
 		change: #Added
 		using: #methodAdded:.
-		
-	self doesFormatOnSave: true
