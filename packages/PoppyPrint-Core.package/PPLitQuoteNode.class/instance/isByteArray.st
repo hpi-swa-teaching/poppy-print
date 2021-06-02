@@ -1,0 +1,4 @@
+accessing
+isByteArray
+
+	^ isByteArray

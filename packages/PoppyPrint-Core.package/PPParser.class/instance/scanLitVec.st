@@ -14,12 +14,14 @@ scanLitVec
 						token == #false ifTrue: [token := false].
 						token == #nil ifTrue: [token := nil]]
 					ifFalse:
-						[(token isCharacter and: [tokenType ~~ #character])
-							ifTrue: [token := token asSymbol]
-							ifFalse: [(token == #- 
-								  and: [(self typeTableAt: hereChar) == #xDigit]) ifTrue: 
-									[self scanToken.
-									 token := token negated]]]].
+						[(tokenType == #xDelimiter)
+							ifFalse: 
+								[(token isCharacter and: [tokenType ~~ #character])
+									ifTrue: [token := token asSymbol]
+									ifFalse: [(token == #- 
+										  and: [(self typeTableAt: hereChar) == #xDigit]) ifTrue: 
+											[self scanToken.
+											 token := token negated]]]]].
 		s nextPut: token.
 		self scanTokenWithCr].
 	token := s contents

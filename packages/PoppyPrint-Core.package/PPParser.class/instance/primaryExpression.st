@@ -21,6 +21,12 @@ primaryExpression
 	(hereType == #string or: [hereType == #literal or: [hereType == #character]]) ifTrue: [
 		parseNode := encoder encodeLiteral: self advance.
 		^ true].
+	hereType == #litVec ifTrue: [
+		parseNode := encoder encodeLitQuote: (self advance) byteArray: false.
+		^ true].
+	hereType == #litByteVec ifTrue: [
+		parseNode := encoder encodeLitQuote: (self advance) byteArray: true.
+		^ true].
 	hereType == #number ifTrue: [
 		parseNode := encoder encodeNumber: self advance.
 		^ true].
