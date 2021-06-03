@@ -1,4 +1,4 @@
 visiting
 visitLitQuoteNode: aNode
 
-	aNode printKeyOn: stream withIndent: indent
+	self indent: 1 around: [aNode printKeyOn: stream withIndent: indent]
