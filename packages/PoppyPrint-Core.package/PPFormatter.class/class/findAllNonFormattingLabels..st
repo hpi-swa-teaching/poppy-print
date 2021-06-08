@@ -22,7 +22,7 @@ findAllNonFormattingLabels: aString
 		index > 0 ifTrue: [
 			labelPositions add: index->2.
 			index := index + self stopLabel size.
-			].
+			] ifFalse: [labelPositions add: aString size -> 2]
 	].
 
 	^labelPositions.
