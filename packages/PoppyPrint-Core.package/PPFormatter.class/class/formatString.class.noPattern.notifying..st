@@ -1,7 +1,7 @@
 format
 formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 
-	| formatter methodNode |
+	| formatter methodNode formattedSource originalLabelPositions formattedLabelPositions|
 	self
 		example: 'string test'
 		receiver: [PPFormatter]
@@ -17,4 +17,16 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 	
 	formatter := self new initForNode: methodNode.
 	methodNode accept: formatter.
-	^ aBoolean ifTrue: [self stripMethodPattern: formatter contents] ifFalse: [formatter contents]
+	"handle nonFormatting Labels"
+	formattedSource := formatter contents.
+	originalLabelPositions := self findAllNonFormattingLabels: aString.
+	formattedLabelPositions := self findAllNonFormattingLabels: formattedSource.
+	
+	formattedLabelPositions ifNotEmpty: [
+		formattedSource := self
+			combineStringsUsingDicts: formattedSource
+			and: aString
+			firstLabels: formattedLabelPositions
+			secondLabels: originalLabelPositions].
+	Transcript show: formattedSource.
+	^ aBoolean ifTrue: [self stripMethodPattern: formatter contents] ifFalse: [formattedSource]
