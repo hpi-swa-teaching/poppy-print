@@ -6,10 +6,10 @@ testRemoveEmptyLinesInArray
 	#(10 10 10 
 	
 	
-	10 
-	10)' as: 'testArray
+		10 
+		10)' as: 'testArray
 
 	#(10 10 10 
-	10 
-	10)'
+		10 
+		10)'
 	

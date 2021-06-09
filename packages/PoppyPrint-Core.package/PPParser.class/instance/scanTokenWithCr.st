@@ -1,6 +1,6 @@
 as yet unclassified
 scanTokenWithCr
-
+	
 	[((tokenType := self typeTableAt: hereChar) == #xDelimiter) and: [hereChar ~= Character cr or: [token == Character cr]]]
 		whileTrue: [self step]. "Skip delimiters fast, there almost always is one."
 	mark := aheadChar == DoItCharacter
