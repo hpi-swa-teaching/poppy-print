@@ -1,4 +1,4 @@
-encoding
+*PoppyPrint-Core
 encodeLitQuote: object byteArray: aBoolean
 
 	| node |

@@ -10,7 +10,10 @@ braceExpression
 	[more]
 		whileTrue: 
 			[loc := hereMark + requestorOffset.
-			here == Character cr ifTrue: [elements addLast: (encoder encodeLiteral: #ppNewLine). self advanceWithCr].
+			here == Character cr ifTrue: 
+				[elements addLast: (encoder encodeLiteral: #ppNewLine).
+				locations addLast: loc.
+				self advanceWithCr].
 			self expressionWithCr
 				ifTrue: 
 					[elements addLast: parseNode.

@@ -4,9 +4,6 @@
 	"instance" : {
 		"autoBind:" : "JD 5/19/2021 10:43",
 		"bindBlockTemp:" : "JD 5/19/2021 10:43",
-		"encodeLitQuote:" : "JD 5/31/2021 13:46",
-		"encodeLitQuote:byteArray:" : "JD 6/3/2021 10:53",
-		"encodeNumber:" : "JD 5/19/2021 10:43",
 		"encodeVariable:sourceRange:ifUnknown:" : "JD 5/19/2021 10:43",
 		"name:key:class:type:set:" : "JD 5/19/2021 10:43",
 		"notify:at:" : "JD 5/19/2021 10:43",
