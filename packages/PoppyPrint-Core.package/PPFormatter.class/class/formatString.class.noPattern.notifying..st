@@ -24,9 +24,9 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 	
 	formattedLabelPositions ifNotEmpty: [
 		formattedSource := self
-			combineStringsUsingDicts: formattedSource
+			combineStringsUsingLabels: formattedSource
 			and: aString
-			firstLabels: formattedLabelPositions
-			secondLabels: originalLabelPositions].
-	Transcript show: formattedSource.
+			formattedLabels: formattedLabelPositions
+			originalLabels: originalLabelPositions].
+		
 	^ aBoolean ifTrue: [self stripMethodPattern: formatter contents] ifFalse: [formattedSource]

@@ -1,0 +1,19 @@
+helper
+combineStringsUsingLabels: formattedString and: originalString formattedLabels: formattedLabels originalLabels: originalLabels
+
+	| outputString helperString |
+	outputString := formattedString copyFrom: 1 to: (formattedLabels keysInOrder at: 1) - 1.
+	1 to: formattedLabels size - 1 do: [:index |
+		helperString := (originalString
+			copyFrom: (originalLabels keysInOrder at: index)
+			to: (originalLabels keysInOrder at: index + 1) - 1).
+		helperString := self clearOutLabels: helperString.
+		outputString := outputString, helperString.
+		
+		helperString := (formattedString
+			copyFrom: ((formattedLabels keysInOrder at: index +1))
+			to: ([(formattedLabels keysInOrder at: index + 2) -1] ifError: [formattedString size])).
+		"helperString := self clearOutLabels: helperString."
+		outputString := outputString, helperString.
+		index := index + 1].
+	^ outputString

@@ -18,6 +18,6 @@ teststartonly
 	PPFormatter startNonFormatting.
 	instanceA := 3. instanceA := 4.
 	instanceA := 2. instanceA := 5.
-	instanceA := 1.	insanceA := 2'.
+	instanceA := 1. insanceA := 2'.
 	
 	self canFormat: baseString as: desiredString.
