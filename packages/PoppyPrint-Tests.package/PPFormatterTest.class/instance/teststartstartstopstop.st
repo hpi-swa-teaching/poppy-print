@@ -22,8 +22,9 @@ teststartstartstopstop
 	PPFormatter startNonFormatting.
 	instanceA := 3. instanceA := 4.
 	instanceA := 1. instanceA := 8.
-	instanceA := 2. instanceA := 5.
 	PPFormatter stopNonFormatting.
+	instanceA := 2.
+	instanceA := 5.
 	instanceA := 1.
 	insanceA := 2'.
 	
