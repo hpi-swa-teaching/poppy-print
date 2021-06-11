@@ -1,5 +1,5 @@
 as yet unclassified
-primaryExpression
+primaryExpressionWithCr
 
 	hereType == #word ifTrue: [
 		parseNode := self variable.
@@ -7,31 +7,32 @@ primaryExpression
 		parseNode nowHasRef.
 		^ true].
 	hereType == #leftBracket ifTrue: [
-		self advance.
+		self advanceWithCr.
 		self blockExpression.
 		^ true].
 	hereType == #leftBrace ifTrue: [
 		self braceExpression.
 		^ true].
 	hereType == #leftParenthesis ifTrue: [
-		self advance.
-		self expression ifFalse: [^ self expected: 'expression'].
+		self advanceWithCr.
+		self expressionWithCr ifFalse: [^ self expected: 'expression'].
 		(self match: #rightParenthesis) ifFalse: [^ self expected: 'right parenthesis'].
 		^ true].
 	(hereType == #string or: [hereType == #literal or: [hereType == #character]]) ifTrue: [
-		parseNode := encoder encodeLiteral: self advance.
+		parseNode := encoder encodeLiteral: self advanceWithCr.
 		^ true].
 	hereType == #litVec ifTrue: [
-		parseNode := encoder encodeLitQuote: (self advance) byteArray: false.
+		parseNode := encoder encodeLitQuote: (self advanceWithCr) byteArray: false.
 		^ true].
 	hereType == #litByteVec ifTrue: [
-		parseNode := encoder encodeLitQuote: (self advance) byteArray: true.
+		parseNode := encoder encodeLitQuote: (self advanceWithCr) byteArray: true.
 		^ true].
 	hereType == #number ifTrue: [
-		parseNode := encoder encodeNumber: self advance.
+		parseNode := encoder encodeNumber: self advanceWithCr.
 		^ true].
+	here == Character cr ifTrue: [self advanceWithCr.^true].
 	(here == #- and: [tokenType == #number and: [1 + hereEnd = mark]]) ifTrue: [
-		self advance.
-		parseNode := encoder encodeLiteral: self advance negated.
+		self advanceWithCr.
+		parseNode := encoder encodeLiteral: self advanceWithCr negated.
 		^ true].
 	^ false
