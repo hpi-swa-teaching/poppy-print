@@ -40,6 +40,4 @@ findAllNonFormattingLabels: aString
 			labelMode := 1].
 		((labelPositions at: key) == 2) ifTrue: [
 			labelMode := 2]. ].
-	
-	Transcript show: cleanLabelPositions.
 	^cleanLabelPositions.

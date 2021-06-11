@@ -21,5 +21,4 @@ testAllMethods
 			"
 			self systemNavigation browseMessageList: ((results associationsSelect: [:assoc | assoc value notNil]) associations collect: [:assoc | assoc key methodReference]).
 			"].
-	
 	self assert: (results values count: #notNil) / results size < 0.01.
