@@ -2,7 +2,7 @@ baseline
 baseline: spec
 	<baseline>
 
-	Transcript showln: 'BASELINE'.
+	PPFormatter addFormatOnSaveToPreferences.
 	
 	spec for: #common do: [
 		spec
