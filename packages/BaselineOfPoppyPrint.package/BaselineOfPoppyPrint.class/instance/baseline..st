@@ -2,8 +2,6 @@ baseline
 baseline: spec
 	<baseline>
 
-	PPFormatter addFormatOnSaveToPreferences.
-	
 	spec for: #common do: [
 		spec
 			package: 'PoppyPrint-Core';
@@ -11,4 +9,6 @@ baseline: spec
 		
 		spec
 			group: 'default' with: #('PoppyPrint-Core');
-			group: 'tests' with: #('PoppyPrint-Tests')]
+			group: 'tests' with: #('PoppyPrint-Tests').
+		
+		spec postLoadDoIt: #postLoad]
