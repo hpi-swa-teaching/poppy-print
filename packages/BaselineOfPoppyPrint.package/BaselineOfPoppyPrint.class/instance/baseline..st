@@ -2,6 +2,8 @@ baseline
 baseline: spec
 	<baseline>
 
+	Transcript showln: 'BASELINE'.
+	
 	spec for: #common do: [
 		spec
 			package: 'PoppyPrint-Core';
