@@ -1,6 +1,6 @@
 tests - leadingZeros
-testDecimalNumber
+testFloatDecimalNumber
 
 	self canFormat: 'testMethod
 
-	00001234'
+	0000123.456'

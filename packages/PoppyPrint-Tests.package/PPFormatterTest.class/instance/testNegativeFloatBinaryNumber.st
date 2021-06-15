@@ -1,6 +1,6 @@
 tests - leadingZeros
-testDecimalNumber
+testNegativeFloatBinaryNumber
 
 	self canFormat: 'testMethod
 
-	00001234'
+	-2r000011110.1101'

@@ -5,4 +5,4 @@ clearOutStopLabels: aString
 	regexStop := self stopLabel, '(.)?(
 	)?'.
 	clearedString := aString copyWithRegex: regexStop matchesReplacedWith: ''.
-	^clearedString.
+	^ clearedString
