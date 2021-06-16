@@ -1,4 +1,4 @@
 baseline
-postLoad
+postLoadCore
 
 	PPFormatter addFormatOnSaveToPreferences
