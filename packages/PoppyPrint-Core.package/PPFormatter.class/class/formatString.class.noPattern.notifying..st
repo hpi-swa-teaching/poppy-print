@@ -1,7 +1,7 @@
 format
 formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 
-	| formatter methodNode formattedSource originalLabelPositions formattedLabelPositions|
+	| formatter methodNode formattedSource originalLabelPositions formattedLabelPositions |
 	self
 		example: 'string test'
 		receiver: [PPFormatter]

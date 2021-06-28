@@ -1,5 +1,4 @@
 as yet unclassified
 printOn: aStream
-	
 
-	self printAsLiteralOn: aStream.
+	self printAsLiteralOn: aStream

@@ -1,6 +1,6 @@
 tests - leadingZeros
-testDecimalNumber
+testNegativeHexNumber
 
 	self canFormat: 'testMethod
 
-	00001234'
+	-16r00F5AB1'

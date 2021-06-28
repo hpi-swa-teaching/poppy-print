@@ -1,4 +1,4 @@
 preferences
 dontFormatOnSave
 
-	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
+	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self

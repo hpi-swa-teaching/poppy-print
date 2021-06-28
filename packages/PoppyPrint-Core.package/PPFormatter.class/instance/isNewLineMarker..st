@@ -1,4 +1,4 @@
 helper
 isNewLineMarker: aNode
 
-	^ (aNode isLiteralNode and: [aNode key = #ppNewLine])
+	^ aNode isLiteralNode and: [aNode key = #ppNewLine]

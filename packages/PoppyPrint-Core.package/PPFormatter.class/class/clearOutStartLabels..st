@@ -5,4 +5,4 @@ clearOutStartLabels: aString
 	regexStart := self startLabel, '(.)?(
 	)?'.
 	clearedString := aString copyWithRegex: regexStart matchesReplacedWith: ''.
-	^clearedString.
+	^ clearedString

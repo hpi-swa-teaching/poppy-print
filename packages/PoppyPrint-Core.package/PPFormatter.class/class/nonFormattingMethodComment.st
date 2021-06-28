@@ -1,4 +1,4 @@
 helper
 nonFormattingMethodComment
 
-	^'noFormatting'
+	^ 'noFormatting'

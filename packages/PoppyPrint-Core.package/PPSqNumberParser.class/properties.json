@@ -6,11 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"number",
-		"base",
-		"leadingZeroAmount" ],
-	"name" : "PPNumberWithBase",
+		"leadingZeroAmount",
+		"leadingZerosSettled" ],
+	"name" : "PPSqNumberParser",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SqNumberParser",
 	"type" : "normal" }
