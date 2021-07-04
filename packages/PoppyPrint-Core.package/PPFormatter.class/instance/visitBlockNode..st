@@ -3,9 +3,14 @@ visitBlockNode: aNode
 
 	| isMethodBlock startWithNewLine |
 	isMethodBlock := (self parentFor: aNode) isKindOf: MethodNode.
-	startWithNewLine := isMethodBlock not and: [aNode statements size > 0 and: [aNode statements size > 1 or: [(self willBeMultiLine: aNode statements first) or: [aNode statements first comment notNil or: [self hasBlockAsChild: aNode]]]]].
+	startWithNewLine := isMethodBlock not and: [
+		aNode statements size > 0 and: [
+			aNode statements size > 1 or: [
+				(self willBeMultiLine: aNode statements first) or: [
+					aNode statements first comment notNil or: [self hasBlockAsChild: aNode]]]]].
 	
-	isMethodBlock ifFalse: [self printBlockStart: aNode startWithNewLine: startWithNewLine].
+	isMethodBlock
+		ifFalse: [self printBlockStart: aNode startWithNewLine: startWithNewLine].
 	
 	self formatTemporariesOf: aNode isMethod: isMethodBlock.
 	
@@ -14,11 +19,15 @@ visitBlockNode: aNode
 		
 		self printBlockComment: aNode.
 		aNode statements do: [:statement |
-			(self isEmptyLineMarker: statement) ifTrue: [self newLine] ifFalse: [
-				self visitNode: statement.
-				statement ~= aNode statements last ifTrue: [
-					stream nextPut: $..
-					self newLine]].
-			self printAllCommentsOf: statement lastStatement: statement = aNode statements last]].
+			(self isEmptyLineMarker: statement)
+				ifTrue: [self newLine]
+				ifFalse: [
+					self visitNode: statement.
+					statement ~= aNode statements last ifTrue: [
+						stream nextPut: $..
+						self newLine]].
+			self
+				printAllCommentsOf: statement
+				lastStatement: statement = aNode statements last]].
 	
 	isMethodBlock ifFalse: [stream nextPut: $]]

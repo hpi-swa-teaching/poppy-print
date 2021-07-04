@@ -1,4 +1,4 @@
 as yet unclassified
 isString
 
-	^false
+	^ false

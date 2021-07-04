@@ -29,8 +29,12 @@ findAllNonFormattingLabels: aString
 	cleanLabelPositions := Dictionary new.
 	
 	labelPositions keysInOrder do: [:key |
-		labelMode == 2 & ((labelPositions at: key) == 1) ifTrue: [cleanLabelPositions add: key -> 1].
-		labelMode == 1 & ((labelPositions at: key) == 2) ifTrue: [cleanLabelPositions add: key -> 2].
-		(labelPositions at: key) == 1 ifTrue: [labelMode := 1].
-		(labelPositions at: key) == 2 ifTrue: [labelMode := 2]].
+		labelMode == 2 & ((labelPositions at: key) == 1)
+			ifTrue: [cleanLabelPositions add: key -> 1].
+		labelMode == 1 & ((labelPositions at: key) == 2)
+			ifTrue: [cleanLabelPositions add: key -> 2].
+		(labelPositions at: key) == 1
+			ifTrue: [labelMode := 1].
+		(labelPositions at: key) == 2
+			ifTrue: [labelMode := 2]].
 	^ cleanLabelPositions

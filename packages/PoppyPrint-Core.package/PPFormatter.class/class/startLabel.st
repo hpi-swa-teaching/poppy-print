@@ -1,4 +1,4 @@
 helper
 startLabel
 
-	^ 'PPFormatter startNonFormatting'
+	^ 'PPFormatter', 'startNonFormatting'

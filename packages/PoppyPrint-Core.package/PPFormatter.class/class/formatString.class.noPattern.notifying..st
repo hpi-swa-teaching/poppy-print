@@ -29,4 +29,6 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 			formattedLabels: formattedLabelPositions
 			originalLabels: originalLabelPositions].
 	formattedLabelPositions ifEmpty: [formattedSource := self clearOutStopLabels: formattedSource].
-	^ aBoolean ifTrue: [self stripMethodPattern: formatter contents] ifFalse: [formattedSource]
+	^ aBoolean
+		ifTrue: [self stripMethodPattern: formatter contents]
+		ifFalse: [formattedSource]

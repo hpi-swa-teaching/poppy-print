@@ -5,7 +5,8 @@ nextUnsignedIntegerOrNilBase: aRadix
 	Count the number of digits and the position of lastNonZero digit and store them in instVar"
 
 	| nPackets high nDigitsHigh lastNonZeroHigh low inLeadingZeros |
-	self leadingZerosSettled ifFalse: [self leadingZeroAmount: 0].
+	self leadingZerosSettled
+		ifFalse: [self leadingZeroAmount: 0].
 	inLeadingZeros := true.
 	"read no more digits than one elementary LargeInteger"
 	high := self nextElementaryLargeIntegerBase: aRadix.
@@ -22,10 +23,13 @@ nextUnsignedIntegerOrNilBase: aRadix
 	[
 		low := self nextLargeIntegerBase: aRadix nPackets: nPackets.
 		low == 0
-			ifTrue: [(inLeadingZeros and: [self leadingZerosSettled not]) ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]
+			ifTrue: [
+				(inLeadingZeros and: [self leadingZerosSettled not])
+					ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]
 			ifFalse: [inLeadingZeros := false].
 		high := high * (aRadix raisedToInteger: nDigits) + low.
-		lastNonZero = 0 ifFalse: [lastNonZeroHigh := lastNonZero + nDigitsHigh].
+		lastNonZero = 0
+			ifFalse: [lastNonZeroHigh := lastNonZero + nDigitsHigh].
 		nDigitsHigh := nDigitsHigh + nDigits.
 		low isLarge] whileTrue: [nPackets := nPackets * 2].
 	

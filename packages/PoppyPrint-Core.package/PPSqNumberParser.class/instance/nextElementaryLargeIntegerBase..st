@@ -13,9 +13,10 @@ nextElementaryLargeIntegerBase: aRadix
 	[
 		value isLarge ifTrue: [^ value].
 		char := sourceStream next ifNil: [^ value].
-		((digit := char digitValue) < 0 or: [digit >= aRadix]) ifTrue: [
-			sourceStream skip: -1.
-			^ value].
+		((digit := char digitValue) < 0 or: [digit >= aRadix])
+			ifTrue: [
+				sourceStream skip: -1.
+				^ value].
 		nDigits := nDigits + 1.
 		digit = 0
 			ifFalse: [
@@ -24,4 +25,5 @@ nextElementaryLargeIntegerBase: aRadix
 				inLeadingZeros := false]
 			ifTrue: [
 				value := value * aRadix.
-				(inLeadingZeros and: [self leadingZerosSettled not]) ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]] repeat
+				(inLeadingZeros and: [self leadingZerosSettled not])
+					ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]] repeat
