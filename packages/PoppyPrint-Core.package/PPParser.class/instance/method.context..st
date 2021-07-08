@@ -8,13 +8,13 @@ method: doit context: ctxt
 	self properties selector: (sap at: 1).
 	encoder selector: (sap at: 1).
 	(sap at: 2) do: [:argNode | argNode beMethodArg].
+	"self halt."
 	doit ifFalse: [self pragmaSequence].
 	
 	" CHANGE: first pop comments, then parse temporaries "
 	messageComment := currentComment.
 	currentComment := nil.
 	" END CHANGE "
-	
 	temps := self temporaries.
 	doit ifFalse: [self pragmaSequence].
 	prim := self pragmaPrimitives.

@@ -1,7 +1,7 @@
 as yet unclassified
 primitive: aPPNumberWithBaseOrString
 	"Create indexed primitive."
-	
+	"self halt."
 	aPPNumberWithBaseOrString isInteger
 		ifTrue: [^self primitive: aPPNumberWithBaseOrString error: nil]
 		ifFalse: [aPPNumberWithBaseOrString isString
