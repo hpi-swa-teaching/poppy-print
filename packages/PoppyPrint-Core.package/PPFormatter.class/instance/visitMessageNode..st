@@ -11,6 +11,7 @@ visitMessageNode: aNode
 	
 	multiLine := self isMultiLineMessage: aNode.
 	
-	aNode originalSelector isBinary ifTrue: [^ self printBinaryMessage: aNode multiLine: multiLine].
+	aNode originalSelector isBinary
+		ifTrue: [^ self printBinaryMessage: aNode multiLine: multiLine].
 	
 	self printKeywordMessage: aNode inCascade: isInCascade multiLine: multiLine

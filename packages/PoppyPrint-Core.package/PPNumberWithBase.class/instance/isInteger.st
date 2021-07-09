@@ -1,4 +1,4 @@
 as yet unclassified
 isInteger
 
-	^self number isInteger
+	^ self number isInteger

@@ -1,4 +1,4 @@
 helper
 stopLabel
 
-	^ 'PPFormatter stopNonFormatting'
+	^ 'PPFormatter ', 'stopNonFormatting'

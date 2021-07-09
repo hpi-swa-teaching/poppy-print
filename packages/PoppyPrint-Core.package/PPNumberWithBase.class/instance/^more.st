@@ -1,4 +1,4 @@
 as yet unclassified
 > aMagnitude
 
-	^self number > aMagnitude
+	^ self number > aMagnitude

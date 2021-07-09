@@ -1,5 +1,6 @@
 as yet unclassified
 advanceWithCr
+
 	| this |
 	prevMark := hereMark.
 	prevEnd := hereEnd.
@@ -8,10 +9,9 @@ advanceWithCr
 	hereType := tokenType.
 	hereMark := mark.
 	hereEnd := source position - (aheadChar == DoItCharacter
-		ifTrue: [hereChar == DoItCharacter
-			ifTrue: [0]
-			ifFalse: [1]]
+		ifTrue: [
+			hereChar == DoItCharacter ifTrue: [0] ifFalse: [1]]
 		ifFalse: [2]).
 	self scanTokenWithCr.
 	"Transcript show: 'here: ', here printString, ' mark: ', hereMark printString, ' end: ', hereEnd printString; cr."
-	^this
+	^ this

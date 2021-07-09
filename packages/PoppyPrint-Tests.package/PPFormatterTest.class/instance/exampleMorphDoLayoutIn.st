@@ -35,4 +35,5 @@ exampleMorphDoLayoutIn
 	
 	"X.2) Redraw."
 	box := self outerBounds.
-	box = priorBounds ifFalse: [self invalidRect: (priorBounds quickMerge: box)]
+	box = priorBounds
+		ifFalse: [self invalidRect: (priorBounds quickMerge: box)]

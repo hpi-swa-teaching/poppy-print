@@ -9,7 +9,7 @@ xDigit
 			source skip: -1
 			"Read off the end last time"]
 		ifFalse: [source skip: -2].
-		
+	
 	numberParser := PPSqNumberParser on: source.
 	number := numberParser
 		failBlock: [:errorString :position | self notify: errorString at: position];

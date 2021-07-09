@@ -2,7 +2,9 @@ helper
 combineStringsUsingLabels: formattedString and: originalString formattedLabels: formattedLabels originalLabels: originalLabels
 
 	| outputString helperString |
-	outputString := formattedString copyFrom: 1 to: (formattedLabels keysInOrder at: 1) - 1.
+	outputString := formattedString
+		copyFrom: 1
+		to: (formattedLabels keysInOrder at: 1) - 1.
 	1 to: formattedLabels size - 1 by: 2 do: [:index |
 		helperString := originalString
 			copyFrom: (originalLabels keysInOrder at: index)

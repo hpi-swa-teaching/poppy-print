@@ -7,4 +7,5 @@ visitCascadeNode: aNode
 			self newLine.
 			(self isEmptyLineMarker: message) ifFalse: [
 				self visitNode: message.
-				message ~= aNode messages last ifTrue: [stream nextPut: $;]]]]
+				message ~= aNode messages last
+					ifTrue: [stream nextPut: $;]]]]

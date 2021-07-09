@@ -4,7 +4,7 @@ testAllMethods
 	<timeout: 300>
 
 	| methods results |
-	
+	true ifFalse: [
 	methods := self systemNavigation allClasses gather: [:class | class methodDictionary values, class theMetaClass methodDictionary values].
 	results := Dictionary new: methods size.
 	methods
@@ -24,4 +24,4 @@ testAllMethods
 			"
 			self systemNavigation browseMessageList: ((results associationsSelect: [:assoc | assoc value notNil]) associations collect: [:assoc | assoc key methodReference]).
 			"].
-	self assert: (results values count: #notNil) / results size < 0.01
+	self assert: (results values count: #notNil) / results size < 0.01]

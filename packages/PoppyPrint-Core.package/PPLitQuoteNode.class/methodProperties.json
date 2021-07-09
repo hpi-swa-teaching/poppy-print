@@ -4,9 +4,11 @@
 	"instance" : {
 		"accept:" : "JD 5/31/2021 13:48",
 		"isByteArray" : "JD 6/2/2021 10:11",
-		"isByteArray:" : "JD 6/2/2021 10:11",
-		"newLineOn:with:" : "JD 5/31/2021 14:28",
-		"printKeyAsArrayOn:withIndent:" : "JD 6/2/2021 10:20",
-		"printKeyAsByteArrayOn:withIndent:" : "JD 6/2/2021 10:21",
-		"printKeyOn:withIndent:" : "JD 6/2/2021 10:14",
-		"writeKeyContentOn:with:" : "JD 6/2/2021 10:20" } }
+		"isByteArray:" : "JD 7/4/2021 10:51",
+		"maxLineLength" : "JD 7/4/2021 10:51",
+		"newLineOn:with:" : "JD 7/4/2021 10:51",
+		"printKeyAsArrayOn:withIndent:" : "JD 7/4/2021 10:51",
+		"printKeyAsByteArrayOn:withIndent:" : "JD 7/4/2021 10:51",
+		"printKeyOn:withIndent:" : "JD 7/4/2021 10:51",
+		"remainingLineLength:" : "JD 7/4/2021 09:50",
+		"writeKeyContentOn:with:" : "JD 7/8/2021 14:10" } }
