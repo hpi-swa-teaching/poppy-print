@@ -22,7 +22,7 @@ body:
       label: How to reproduce?
       description: Tell us how we can reproduce the bug step by step.
       placeholder: Tell us how to reproduce it!
-      value: " "
+      value: "-"
     validations:
       required: true
   - type: textarea
