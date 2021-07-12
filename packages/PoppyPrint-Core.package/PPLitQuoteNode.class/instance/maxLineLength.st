@@ -1,4 +1,4 @@
 as yet unclassified
 maxLineLength
 
-	^ 80
+	^ 82

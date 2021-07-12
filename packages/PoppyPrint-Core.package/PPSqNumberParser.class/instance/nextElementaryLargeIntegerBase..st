@@ -11,11 +11,12 @@ nextElementaryLargeIntegerBase: aRadix
 	lastNonZero := 0.
 	inLeadingZeros := true.
 	[
-		value isLarge ifTrue: [^ value].
-		char := sourceStream next ifNil: [^ value].
+		value isLarge ifTrue: [inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].^ value].
+		char := sourceStream next ifNil: [inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].^ value].
 		((digit := char digitValue) < 0 or: [digit >= aRadix])
 			ifTrue: [
 				sourceStream skip: -1.
+				inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].
 				^ value].
 		nDigits := nDigits + 1.
 		digit = 0

@@ -35,4 +35,5 @@ nextUnsignedIntegerOrNilBase: aRadix
 	
 	nDigits := nDigitsHigh.
 	lastNonZero := lastNonZeroHigh.
+	inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].
 	^ high

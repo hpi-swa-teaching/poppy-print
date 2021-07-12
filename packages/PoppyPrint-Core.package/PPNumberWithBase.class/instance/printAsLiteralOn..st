@@ -7,6 +7,5 @@ printAsLiteralOn: aStream
 	self base == 10 ifFalse: [
 		self base printAsLiteralOn: aStream.
 		aStream nextPutAll: 'r'].
-	self number ~= 0 ifTrue: [
-		1 to: self leadingZeroAmount do: [:i | aStream nextPutAll: '0']].
+	1 to: self leadingZeroAmount do: [:i | aStream nextPutAll: '0'].
 	self number printAsLiteralOn: aStream withBase: self base

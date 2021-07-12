@@ -1,6 +1,5 @@
 tests - examples
 testObjectMethods
-
 	| expectedFailures |
 	expectedFailures := #(caseOf:otherwise: dpsTrace:levels:withContext:) flag: #todo. "https://github.com/tom95/poppy-print/issues/8"
 	
