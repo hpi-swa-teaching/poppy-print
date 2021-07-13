@@ -9,7 +9,6 @@ method: doit context: ctxt
 	encoder selector: (sap at: 1).
 	(sap at: 2) do: [:argNode | argNode beMethodArg].
 	doit ifFalse: [self pragmaSequence].
-	
 	" CHANGE: first pop comments, then parse temporaries "
 	messageComment := currentComment.
 	currentComment := nil.

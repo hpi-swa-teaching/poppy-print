@@ -3,7 +3,7 @@ externalFunctionDeclaration
 	"Parse the function declaration for a call to an external library."
 	| descriptorClass callType modifier retType externalName args argType module fn |
 	descriptorClass := cue environment
-		valueOf: #ExternalFunction 
+		valueOf: #PPExternalFunction 
 		ifAbsent: [^ false].
 	callType := descriptorClass callingConventionFor: here.
 	callType == nil ifTrue:[^false].
@@ -25,7 +25,9 @@ externalFunctionDeclaration
 	[self match: #rightParenthesis] whileFalse:[
 		argType := self externalType: descriptorClass.
 		argType == nil ifTrue:[^self expected:'argument'].
-		argType isVoid & argType isPointerType not ifFalse:[args nextPut: argType] ifTrue:[args nextPut: argType]].
+		"This was the only thing we could do because X11Drawable doesnt know isVoid for SOME REASON..."
+		(argType = X11Drawable) ifTrue: [args nextPut: argType] ifFalse: [
+		argType isVoid & argType isPointerType not ifFalse:[args nextPut: argType] ifTrue:[args nextPut: argType]]].
 	(self matchToken: 'module:') ifTrue:[
 		module := here.
 		(self match: #string) ifFalse:[^self expected: 'String'].
