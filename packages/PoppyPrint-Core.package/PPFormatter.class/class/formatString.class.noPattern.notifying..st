@@ -2,7 +2,6 @@ format
 formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 
 	| formatter methodNode formattedSource originalLabelPositions formattedLabelPositions |
-	self halt.
 	self
 		example: 'string test'
 		receiver: [PPFormatter]
@@ -15,7 +14,6 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 			noPattern: aBoolean
 			notifying: anObject
 			ifFail: nil.
-	
 	formatter := self new initForNode: methodNode.
 	methodNode accept: formatter.
 	"handle nonFormatting Labels"

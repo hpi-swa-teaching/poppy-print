@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "PPExternalFunction",
+		"byteArray" ],
+	"name" : "PPFFIByteArray",
 	"pools" : [
 		 ],
-	"super" : "ExternalFunction",
+	"super" : "Object",
 	"type" : "normal" }

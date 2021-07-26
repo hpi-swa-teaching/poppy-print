@@ -1,14 +1,11 @@
 helper
 readFullFfiPrimitive
 	"String."
-
-	[aheadChar ~= $>] whileTrue: [
-		(hereChar == $')
-		ifTrue: [buffer nextPut: $'.self step]	
-	 	ifFalse: [buffer nextPut: self step]].
-	token := buffer contents.
-	tokenType := #string.
-	self step.
+	[hereChar ~= $>] whileTrue: [
+		buffer nextPut: self step].
+	token := PPFFIByteArray new.
+	token byteArray: (buffer contents) asByteArray.
+	tokenType := #literal.
 	self advance.
 	"self step."
 	
