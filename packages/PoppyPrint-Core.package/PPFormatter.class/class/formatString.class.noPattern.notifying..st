@@ -2,6 +2,7 @@ format
 formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 
 	| formatter methodNode formattedSource originalLabelPositions formattedLabelPositions |
+	self halt.
 	self
 		example: 'string test'
 		receiver: [PPFormatter]

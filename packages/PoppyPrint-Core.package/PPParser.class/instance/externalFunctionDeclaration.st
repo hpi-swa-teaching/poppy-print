@@ -1,7 +1,13 @@
 helper
 externalFunctionDeclaration
 	"Parse the function declaration for a call to an external library."
-	| descriptorClass callType modifier retType externalName args argType module fn |
+	| keyWord |
+	keyWord := here asSymbol.
+	self readFullFfiPrimitive.
+	self addPragma: (Pragma keyword: keyWord arguments: (Array with: here)).
+	self advance.
+	^true.
+	"
 	descriptorClass := cue environment
 		valueOf: #PPExternalFunction 
 		ifAbsent: [^ false].
@@ -11,11 +17,11 @@ externalFunctionDeclaration
 	 modifier notNil] whileTrue:
 		[self advance.
 		 callType := callType bitOr: modifier].
-	"Parse return type"
+	" "End of block expected ->""Parse return type""
 	self advance.
 	retType := self externalType: descriptorClass.
 	retType == nil ifTrue:[^self expected:'return type'].
-	"Parse function name or index"
+	""Parse function name or index""
 	externalName := here.
 	(self match: #string) 
 		ifTrue:[externalName := externalName asSymbol]
@@ -25,7 +31,7 @@ externalFunctionDeclaration
 	[self match: #rightParenthesis] whileFalse:[
 		argType := self externalType: descriptorClass.
 		argType == nil ifTrue:[^self expected:'argument'].
-		"This was the only thing we could do because X11Drawable doesnt know isVoid for SOME REASON..."
+		""This was the only thing we could do because X11Drawable doesnt know isVoid for SOME REASON...""
 		(argType = X11Drawable) ifTrue: [args nextPut: argType] ifFalse: [
 		argType isVoid & argType isPointerType not ifFalse:[args nextPut: argType] ifTrue:[args nextPut: argType]]].
 	(self matchToken: 'module:') ifTrue:[
@@ -50,4 +56,4 @@ externalFunctionDeclaration
 			 fn ifNotNil: [fn setErrorCodeName: errorCodeVariable]]
 		ifFalse:
 			[self addPragma: (Pragma keyword: #primitive: arguments: #(120))].
-	^true
+	^true"

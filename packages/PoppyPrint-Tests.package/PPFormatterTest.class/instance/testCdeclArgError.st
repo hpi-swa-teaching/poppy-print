@@ -1,4 +1,4 @@
-tests - FFI-fuckery
+tests - FFI-syntax
 testCdeclArgError
 	"the method is found in FFI-Win32-Examples"
 	(PackageInfo allPackages findFirst: [:each | each packageName startsWith: 'FFI']) ~= 0 ifTrue: [
