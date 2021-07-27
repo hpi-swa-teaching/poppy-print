@@ -4,11 +4,13 @@ nextElementaryLargeIntegerBase: aRadix
 	Return this integer, or zero if no digits found.
 	Stop reading if end of digits or if a LargeInteger is formed.
 	Count the number of digits and the position of lastNonZero digit and store them in instVar."
+	"based on: NumberParser >> nextElementaryLargeIntegerBase"
 
 	| value digit char inLeadingZeros |
 	value := 0.
 	nDigits := 0.
 	lastNonZero := 0.
+	"modification"
 	inLeadingZeros := true.
 	[
 		value isLarge ifTrue: [inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].^ value].
@@ -28,3 +30,4 @@ nextElementaryLargeIntegerBase: aRadix
 				value := value * aRadix.
 				(inLeadingZeros and: [self leadingZerosSettled not])
 					ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]] repeat
+			"end of modification"

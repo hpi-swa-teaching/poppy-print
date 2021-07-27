@@ -3,11 +3,14 @@ nextUnsignedIntegerOrNilBase: aRadix
 	"Form an unsigned integer with incoming digits from sourceStream.
 	Answer this integer, or nil if no digit found.
 	Count the number of digits and the position of lastNonZero digit and store them in instVar"
+	"based on: NumberParser >> nextUnsignedIntegerOrNilBase:"
 
 	| nPackets high nDigitsHigh lastNonZeroHigh low inLeadingZeros |
+	"modification"
 	self leadingZerosSettled
 		ifFalse: [self leadingZeroAmount: 0].
 	inLeadingZeros := true.
+	"end of modification"
 	"read no more digits than one elementary LargeInteger"
 	high := self nextElementaryLargeIntegerBase: aRadix.
 	nDigits = 0 ifTrue: [^ nil].
@@ -22,11 +25,13 @@ nextUnsignedIntegerOrNilBase: aRadix
 	lastNonZeroHigh := lastNonZero.
 	[
 		low := self nextLargeIntegerBase: aRadix nPackets: nPackets.
+		"modification"
 		low == 0
 			ifTrue: [
 				(inLeadingZeros and: [self leadingZerosSettled not])
 					ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]
 			ifFalse: [inLeadingZeros := false].
+		"end of modification"
 		high := high * (aRadix raisedToInteger: nDigits) + low.
 		lastNonZero = 0
 			ifFalse: [lastNonZeroHigh := lastNonZero + nDigitsHigh].
@@ -35,5 +40,7 @@ nextUnsignedIntegerOrNilBase: aRadix
 	
 	nDigits := nDigitsHigh.
 	lastNonZero := lastNonZeroHigh.
+	"modification"
 	inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].
+	"end of modification"
 	^ high

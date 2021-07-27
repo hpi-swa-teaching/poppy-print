@@ -1,6 +1,7 @@
 expression types
 method: doit context: ctxt
 	" pattern [ | temporaries ] block => MethodNode."
+	"based on: Parser >> method:context:"
 
 	| sap blk prim temps messageComment methodNode |
 	sap := self pattern: doit inContext: ctxt.
@@ -9,22 +10,19 @@ method: doit context: ctxt
 	encoder selector: (sap at: 1).
 	(sap at: 2) do: [:argNode | argNode beMethodArg].
 	doit ifFalse: [self pragmaSequence].
-	" CHANGE: first pop comments, then parse temporaries "
+	"modification: first pop comments, then parse temporaries "
 	messageComment := currentComment.
 	currentComment := nil.
-	" END CHANGE "
-	
 	temps := self temporaries.
+	"end of modification"
 	doit ifFalse: [self pragmaSequence].
 	prim := self pragmaPrimitives.
 	self statements: #() innerBlock: false blockNode: BlockNode new.
 	blk := parseNode.
-	"CHANGE"
-	
+	"modification"
 	self includeGenerated ifTrue: [
 		doit ifTrue: [blk returnLast] ifFalse: [blk returnSelfIfNoOther: encoder]].
-	"END CHANGE"
-	
+	"end of modification"
 	hereType == #doIt ifFalse: [^ self expected: 'Nothing more'].
 	methodNode := self newMethodNode comment: messageComment.
 	methodNode

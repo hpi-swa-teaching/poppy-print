@@ -1,4 +1,4 @@
-as yet unclassified
+arithmetic
 negated
 
 	^ self class new

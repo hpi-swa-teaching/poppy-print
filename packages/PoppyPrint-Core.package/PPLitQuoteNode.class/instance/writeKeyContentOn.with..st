@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 writeKeyContentOn: aStream with: indent
 
 	| remainingLength writtenCharacters |

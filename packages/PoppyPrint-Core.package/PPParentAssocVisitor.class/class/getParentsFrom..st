@@ -1,4 +1,4 @@
-as yet unclassified
+visiting
 getParentsFrom: aMethodNode
 
 	| visitor |

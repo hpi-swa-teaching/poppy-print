@@ -2,7 +2,6 @@
 	"class" : {
 		"getParentsFrom:" : "" },
 	"instance" : {
-		"getParentsFrom:" : "tobe 3/10/2021 14:58",
 		"initialize" : "tobe 3/10/2021 14:58",
 		"parents" : "tobe 3/10/2021 14:58",
 		"visitAssignmentNode:" : "tobe 3/10/2021 14:58",
@@ -15,5 +14,4 @@
 		"visitMessageNodeInCascade:" : "tobe 3/10/2021 17:16",
 		"visitMethodNode:" : "tobe 3/10/2021 14:58",
 		"visitPPNumberNode:" : "JD 5/19/2021 10:48",
-		"visitReturnNode:" : "tobe 3/10/2021 14:58",
-		"visitTrackedAssignmentNode:" : "tobe 3/10/2021 14:58" } }
+		"visitReturnNode:" : "tobe 3/10/2021 14:58" } }

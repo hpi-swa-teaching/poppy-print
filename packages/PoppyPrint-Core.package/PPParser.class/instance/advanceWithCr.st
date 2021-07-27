@@ -1,6 +1,7 @@
-as yet unclassified
+expression types
 advanceWithCr
 
+	"based on: Parser >> advance"
 	| this |
 	prevMark := hereMark.
 	prevEnd := hereEnd.
@@ -12,6 +13,7 @@ advanceWithCr
 		ifTrue: [
 			hereChar == DoItCharacter ifTrue: [0] ifFalse: [1]]
 		ifFalse: [2]).
+	"modification"
 	self scanTokenWithCr.
-	"Transcript show: 'here: ', here printString, ' mark: ', hereMark printString, ' end: ', hereEnd printString; cr."
+	"end of modification"
 	^ this

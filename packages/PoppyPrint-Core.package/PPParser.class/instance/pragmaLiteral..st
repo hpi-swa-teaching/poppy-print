@@ -1,4 +1,4 @@
-as yet unclassified
+pragmas
 pragmaLiteral: selectorSoFar
 	"Read a pragma literal.  As a nicety we allow a variable name (rather
 	 than a literal string) as the second argument to primitive:error:"
@@ -7,8 +7,11 @@ pragmaLiteral: selectorSoFar
 		hereType == #literal or: [
 			hereType == #number or: [
 				hereType == #character or: [
+					"modification"
 					hereType == #litVec or: [hereType == #litByteVec]]]]])
-		ifTrue: [^ self advance].
+					"end of modification"
+		ifTrue: [
+		^ self advance].
 	(here == $# and: [tokenType == #word])
 		ifTrue: [^ self advance].
 	(here == #- and: [tokenType == #number])

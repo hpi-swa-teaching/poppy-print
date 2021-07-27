@@ -1,7 +1,9 @@
-as yet unclassified
+primitives
 primitive: aPPNumberWithBaseOrString error: errorCodeVariableOrNil
 	"Create indexed primitive with optional error code."
-
+	"based on: Parser >> primitive:error:"
+	
+	"modification"
 	^ aPPNumberWithBaseOrString isPPNumberWithBase
 		ifTrue: [
 			errorCodeVariableOrNil ifNotNil: [encoder floatTemp: (encoder bindTemp: errorCodeVariableOrNil) nowHasDef].
@@ -19,3 +21,4 @@ primitive: aPPNumberWithBaseOrString error: errorCodeVariableOrNil
 								module: nil
 								error: errorCodeVariableOrNil]
 						ifFalse: [self expected: 'Indexed primitive']]]
+		"end of modification"

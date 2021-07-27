@@ -1,6 +1,7 @@
-as yet unclassified
+multi-character scans
 xDigit
 	"Form a number."
+	"based on: Scanner >> xDigit"
 
 	| numberParser number |
 	tokenType := #number.
@@ -9,7 +10,7 @@ xDigit
 			source skip: -1
 			"Read off the end last time"]
 		ifFalse: [source skip: -2].
-	
+	"modification"
 	numberParser := PPSqNumberParser on: source.
 	number := numberParser
 		failBlock: [:errorString :position | self notify: errorString at: position];
@@ -19,6 +20,7 @@ xDigit
 		number: number;
 		leadingZeroAmount: numberParser leadingZeroAmount;
 		yourself.
+		"end of modification"
 	self
 		step;
 		step

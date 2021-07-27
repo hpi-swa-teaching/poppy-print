@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 printKeyAsByteArrayOn: aStream withIndent: indent
 
 	aStream

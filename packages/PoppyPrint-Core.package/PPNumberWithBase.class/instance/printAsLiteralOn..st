@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 printAsLiteralOn: aStream
 
 	self number < 0 ifTrue: [

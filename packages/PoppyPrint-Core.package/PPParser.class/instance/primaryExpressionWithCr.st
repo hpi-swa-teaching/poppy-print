@@ -1,12 +1,14 @@
-as yet unclassified
+expression types
 primaryExpressionWithCr
 
+	"based on: Parser >> primaryExpression"
 	hereType == #word ifTrue: [
 		parseNode := self variable.
 		(parseNode isUndefTemp and: [self interactive])
 			ifTrue: [self queryUndefined].
 		parseNode nowHasRef.
 		^ true].
+	"modification"
 	hereType == #leftBracket ifTrue: [
 		self advanceWithCr.
 		self blockExpression.
@@ -26,6 +28,7 @@ primaryExpressionWithCr
 		ifTrue: [
 			parseNode := encoder encodeLiteral: self advanceWithCr.
 			^ true].
+	
 	hereType == #litVec ifTrue: [
 		parseNode := encoder encodeLitQuote: self advanceWithCr byteArray: false.
 		^ true].
@@ -44,4 +47,5 @@ primaryExpressionWithCr
 			self advanceWithCr.
 			parseNode := encoder encodeLiteral: self advanceWithCr negated.
 			^ true].
+	"end of modification"
 	^ false

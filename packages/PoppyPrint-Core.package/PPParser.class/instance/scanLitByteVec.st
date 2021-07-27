@@ -1,7 +1,9 @@
-as yet unclassified
+expression types
 scanLitByteVec
 
+	"based on: Scanner >> scanLitByteVec"
 	| stream |
+	"modification"
 	stream := WriteStream on: (Array new: 16).
 	[
 		tokenType == #rightBracket or: [tokenType == #doIt]] whileFalse: [
@@ -11,4 +13,5 @@ scanLitByteVec
 			ifFalse: [^ self offEnd: '8-bit integer or right bracket expected'].
 		stream nextPut: token.
 		self scanTokenWithCr].
+	"end of modification"
 	token := stream contents

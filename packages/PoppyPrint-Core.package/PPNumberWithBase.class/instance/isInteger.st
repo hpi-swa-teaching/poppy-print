@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isInteger
 
 	^ self number isInteger

@@ -1,4 +1,4 @@
-as yet unclassified
+visiting
 accept: aVisitor
 
 	^ aVisitor visitLitQuoteNode: self

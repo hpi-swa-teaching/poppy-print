@@ -1,6 +1,7 @@
-as yet unclassified
+expression types
 primaryExpression
 
+	"based on: Parser >> primaryExpression"
 	hereType == #word ifTrue: [
 		parseNode := self variable.
 		(parseNode isUndefTemp and: [self interactive])
@@ -25,6 +26,7 @@ primaryExpression
 		ifTrue: [
 			parseNode := encoder encodeLiteral: self advance.
 			^ true].
+	"modification"
 	hereType == #litVec ifTrue: [
 		parseNode := encoder encodeLitQuote: self advance byteArray: false.
 		^ true].
@@ -34,6 +36,7 @@ primaryExpression
 	hereType == #number ifTrue: [
 		parseNode := encoder encodeNumber: self advance.
 		^ true].
+	"end of modification"
 	(here == #- and: [
 		tokenType == #number and: [1 + hereEnd = mark]])
 		ifTrue: [

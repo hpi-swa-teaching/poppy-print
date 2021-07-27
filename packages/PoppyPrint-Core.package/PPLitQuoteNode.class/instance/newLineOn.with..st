@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 newLineOn: aStream with: indent
 
 	aStream crtab: indent
