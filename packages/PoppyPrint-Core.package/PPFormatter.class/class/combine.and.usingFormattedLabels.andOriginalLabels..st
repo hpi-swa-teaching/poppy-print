@@ -1,5 +1,5 @@
 helper
-combineStringsUsingLabels: formattedString and: originalString formattedLabels: formattedLabels originalLabels: originalLabels
+combine: formattedString and: originalString usingFormattedLabels: formattedLabels andOriginalLabels: originalLabels
 
 	| outputString helperString |
 	outputString := formattedString

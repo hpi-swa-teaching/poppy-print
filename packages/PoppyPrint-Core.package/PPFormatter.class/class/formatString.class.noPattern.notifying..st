@@ -23,10 +23,10 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 	
 	formattedLabelPositions ifNotEmpty: [
 		formattedSource := self
-			combineStringsUsingLabels: formattedSource
+			combine: formattedSource
 			and: aString
-			formattedLabels: formattedLabelPositions
-			originalLabels: originalLabelPositions].
+			usingFormattedLabels: formattedLabelPositions
+			andOriginalLabels: originalLabelPositions].
 	formattedLabelPositions ifEmpty: [formattedSource := self clearOutStopLabels: formattedSource].
 	^ aBoolean
 		ifTrue: [self stripMethodPattern: formatter contents]

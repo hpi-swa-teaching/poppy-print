@@ -1,4 +1,0 @@
-helper
-nonFormattingMethodComment
-
-	^ 'noFormatting'
