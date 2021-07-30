@@ -1,4 +1,4 @@
-parsing-public
+parsing-large int
 nextElementaryLargeIntegerBase: aRadix
 	"Form an unsigned integer with incoming digits from sourceStream.
 	Return this integer, or zero if no digits found.

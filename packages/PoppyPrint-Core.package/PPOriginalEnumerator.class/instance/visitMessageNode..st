@@ -1,4 +1,4 @@
-as yet unclassified
+visiting
 visitMessageNode: aMessageNode
 
 	"based on: ParseNodeEnumerator >> visitMessageNode:"

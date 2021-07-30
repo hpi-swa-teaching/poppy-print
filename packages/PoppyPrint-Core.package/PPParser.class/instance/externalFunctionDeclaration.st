@@ -1,4 +1,4 @@
-helper
+primitives
 externalFunctionDeclaration
 	"Parse the function declaration for a call to an external library."
 	| keyWord |

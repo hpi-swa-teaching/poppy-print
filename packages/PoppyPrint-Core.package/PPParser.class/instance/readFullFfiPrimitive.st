@@ -3,7 +3,7 @@ readFullFfiPrimitive
 	"String."
 	[hereChar ~= $>] whileTrue: [
 		buffer nextPut: self step].
-	token := PPFFIByteArray new.
+	token := PPByteArray new.
 	token byteArray: (buffer contents) asByteArray.
 	tokenType := #literal.
 	self advance.

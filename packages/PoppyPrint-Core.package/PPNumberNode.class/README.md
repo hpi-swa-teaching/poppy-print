@@ -1,0 +1,1 @@
+A PPNumberNode is a ParseNode representing a number.
