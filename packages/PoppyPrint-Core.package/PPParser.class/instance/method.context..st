@@ -15,11 +15,13 @@ method: doit context: ctxt
 	currentComment := nil.
 	temps := self temporaries.
 	"end of modification"
+	
 	doit ifFalse: [self pragmaSequence].
 	prim := self pragmaPrimitives.
 	self statements: #() innerBlock: false blockNode: BlockNode new.
 	blk := parseNode.
 	"modification"
+	
 	self includeGenerated ifTrue: [
 		doit ifTrue: [blk returnLast] ifFalse: [blk returnSelfIfNoOther: encoder]].
 	"end of modification"

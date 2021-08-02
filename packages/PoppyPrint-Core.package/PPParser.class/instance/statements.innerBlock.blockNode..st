@@ -2,7 +2,7 @@ expression types
 statements: argNodes innerBlock: inner blockNode: theBlockNode
 	"give initial comment to block, since others trail statements"
 	"based on: Parser >> statements:innerBlock:blockNode:"
-	
+
 	| stmts start returns |
 	theBlockNode comment: currentComment.
 	currentComment := nil.
@@ -34,12 +34,12 @@ statements: argNodes innerBlock: inner blockNode: theBlockNode
 						ifFalse: [
 							self addComment.
 							"modification"
+							
 							(self includeGenerated and: [stmts size = 0])
 								ifTrue: [
 									stmts addLast: (inner ifTrue: [encoder encodeVariable: 'nil'] ifFalse: [
 										encoder lookupVariable: 'self' ifAbsent: [self assert: false]])]]].
-			self match: #period]
-		whileTrue].
+			self match: #period] whileTrue].
 	theBlockNode
 		arguments: argNodes
 		statements: stmts

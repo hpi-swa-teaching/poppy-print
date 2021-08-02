@@ -1,7 +1,7 @@
 expression types
 advanceWithCr
-
 	"based on: Parser >> advance"
+
 	| this |
 	prevMark := hereMark.
 	prevEnd := hereEnd.
@@ -14,6 +14,7 @@ advanceWithCr
 			hereChar == DoItCharacter ifTrue: [0] ifFalse: [1]]
 		ifFalse: [2]).
 	"modification"
+	
 	self scanTokenWithCr.
 	"end of modification"
 	^ this

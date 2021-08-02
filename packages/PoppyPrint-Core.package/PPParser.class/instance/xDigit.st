@@ -11,6 +11,7 @@ xDigit
 			"Read off the end last time"]
 		ifFalse: [source skip: -2].
 	"modification"
+	
 	numberParser := PPSqNumberParser on: source.
 	number := numberParser
 		failBlock: [:errorString :position | self notify: errorString at: position];
@@ -20,7 +21,7 @@ xDigit
 		number: number;
 		leadingZeroAmount: numberParser leadingZeroAmount;
 		yourself.
-		"end of modification"
+	"end of modification"
 	self
 		step;
 		step

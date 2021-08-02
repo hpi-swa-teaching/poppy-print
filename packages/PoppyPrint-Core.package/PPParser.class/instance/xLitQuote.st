@@ -17,6 +17,7 @@ xLitQuote
 			tokenType == #doIt
 				ifTrue: [self offEnd: 'Unmatched parenthesis'].
 			"modification"
+			
 			tokenType := #litVec]
 		ifFalse: [
 			tokenType == #leftBracket
@@ -26,8 +27,8 @@ xLitQuote
 						scanLitByteVec.
 					mark := start + 1.
 					tokenType == #doIt ifTrue: [self offEnd: 'Unmatched bracket'].
-					tokenType := #litByteVec]
-				"end of modification"
+					tokenType := #litByteVec
+					"end of modification"]
 				ifFalse: [
 					(tokenType == #word or: [
 						tokenType == #keyword or: [tokenType == #colon]])
@@ -42,6 +43,7 @@ xLitQuote
 											ifTrue: [token := token asSymbol]
 											ifFalse: [self notify: 'Invalid literal character' at: start + 1]]]].
 					"modification"
+					
 					tokenType := #literal]].
 	mark := start
 	"end of modification"

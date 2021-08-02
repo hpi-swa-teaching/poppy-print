@@ -1,7 +1,7 @@
 expression types
 scanLitVec
-
 	"based on: Scanner >> scanLitVec"
+
 	| s |
 	s := WriteStream on: (Array new: 16).
 	[
@@ -18,8 +18,9 @@ scanLitVec
 						self scanLitWord.
 						token == #true ifTrue: [token := true].
 						token == #false ifTrue: [token := false].
-						token == #nil ifTrue: [token := nil]]
-					"modification"
+						token == #nil ifTrue: [
+							token := nil
+							"modification"]]
 					ifFalse: [
 						tokenType == #xDelimiter ifFalse: [
 							(token isCharacter and: [tokenType ~~ #character])

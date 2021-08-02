@@ -1,7 +1,7 @@
 expression types
 scanLitByteVec
-
 	"based on: Scanner >> scanLitByteVec"
+
 	| stream |
 	"modification"
 	stream := WriteStream on: (Array new: 16).

@@ -9,8 +9,7 @@
 		"stream",
 		"indent",
 		"parents",
-		"preFormatCache",
-		"comments" ],
+		"preFormatCache" ],
 	"name" : "PPFormatter",
 	"pools" : [
 		 ],

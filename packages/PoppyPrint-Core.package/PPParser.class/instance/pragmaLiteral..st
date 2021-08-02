@@ -9,8 +9,7 @@ pragmaLiteral: selectorSoFar
 				hereType == #character or: [
 					"modification"
 					hereType == #litVec or: [hereType == #litByteVec]]]]])
-					"end of modification"
-		ifTrue: [
+		ifTrue: ["end of modification"
 		^ self advance].
 	(here == $# and: [tokenType == #word])
 		ifTrue: [^ self advance].

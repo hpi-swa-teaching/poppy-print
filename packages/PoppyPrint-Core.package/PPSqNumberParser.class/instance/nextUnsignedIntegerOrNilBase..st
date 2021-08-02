@@ -11,6 +11,7 @@ nextUnsignedIntegerOrNilBase: aRadix
 		ifFalse: [self leadingZeroAmount: 0].
 	inLeadingZeros := true.
 	"end of modification"
+	
 	"read no more digits than one elementary LargeInteger"
 	high := self nextElementaryLargeIntegerBase: aRadix.
 	nDigits = 0 ifTrue: [^ nil].
@@ -26,12 +27,14 @@ nextUnsignedIntegerOrNilBase: aRadix
 	[
 		low := self nextLargeIntegerBase: aRadix nPackets: nPackets.
 		"modification"
+		
 		low == 0
 			ifTrue: [
 				(inLeadingZeros and: [self leadingZerosSettled not])
 					ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]
 			ifFalse: [inLeadingZeros := false].
 		"end of modification"
+		
 		high := high * (aRadix raisedToInteger: nDigits) + low.
 		lastNonZero = 0
 			ifFalse: [lastNonZeroHigh := lastNonZero + nDigitsHigh].
@@ -41,6 +44,7 @@ nextUnsignedIntegerOrNilBase: aRadix
 	nDigits := nDigitsHigh.
 	lastNonZero := lastNonZeroHigh.
 	"modification"
-	inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].
+	
+	inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount - 1].
 	"end of modification"
 	^ high

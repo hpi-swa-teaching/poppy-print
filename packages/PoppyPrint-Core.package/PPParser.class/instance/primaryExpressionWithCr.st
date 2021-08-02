@@ -1,7 +1,7 @@
 expression types
 primaryExpressionWithCr
-
 	"based on: Parser >> primaryExpression"
+
 	hereType == #word ifTrue: [
 		parseNode := self variable.
 		(parseNode isUndefTemp and: [self interactive])
@@ -9,6 +9,7 @@ primaryExpressionWithCr
 		parseNode nowHasRef.
 		^ true].
 	"modification"
+	
 	hereType == #leftBracket ifTrue: [
 		self advanceWithCr.
 		self blockExpression.
