@@ -1,0 +1,4 @@
+accessing
+buffer
+
+	^ buffer

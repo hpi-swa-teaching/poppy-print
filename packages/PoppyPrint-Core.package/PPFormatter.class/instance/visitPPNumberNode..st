@@ -1,4 +1,4 @@
 visiting
 visitPPNumberNode: aNode
 
-	aNode key printAsLiteralOn: stream
+	aNode key printAsLiteralOn: self stream

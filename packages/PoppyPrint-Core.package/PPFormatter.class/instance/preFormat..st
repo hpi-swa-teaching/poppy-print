@@ -2,10 +2,10 @@ printing
 preFormat: aNode
 
 	| formatter |
-	^ (preFormatCache at: aNode ifAbsentPut: [
+	^ (self preFormatCache at: aNode ifAbsentPut: [
 		formatter := self class new.
-		formatter parents: parents.
-		formatter indent: indent.
-		formatter preFormatCache: preFormatCache copy.
+		formatter parents: self parents.
+		formatter indent: self indent.
+		formatter preFormatCache: self preFormatCache copy.
 		aNode accept: formatter.
-		{formatter rawContents. indent}]) first
+		{formatter rawContents. self indent}]) first

@@ -1,4 +1,4 @@
 initialize-release
 initForNode: aNode
 
-	parents := PPParentAssocVisitor getParentsFrom: aNode
+	self parents: (PPParentAssocVisitor getParentsFrom: aNode)

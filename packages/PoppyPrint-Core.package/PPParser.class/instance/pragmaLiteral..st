@@ -2,6 +2,7 @@ pragmas
 pragmaLiteral: selectorSoFar
 	"Read a pragma literal.  As a nicety we allow a variable name (rather
 	 than a literal string) as the second argument to primitive:error:"
+	"based on: Parser >> #pragmaLiteral:"
 
 	(hereType == #string or: [
 		hereType == #literal or: [

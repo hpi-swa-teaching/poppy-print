@@ -1,25 +1,9 @@
 helper
 readFullFfiPrimitive
-	"String."
-	[hereChar ~= $>] whileTrue: [
-		buffer nextPut: self step].
-	token := PPByteArray new.
-	token byteArray: (buffer contents) asByteArray.
+
+	[self hereChar ~= $>] whileTrue: [
+		self buffer nextPut: self step].
+	self token: PPByteArray new.
+	self token byteArray: (self buffer contents) asByteArray.
 	tokenType := #literal.
 	self advance.
-	"self step."
-	
-	"
-	self step.
-	buffer reset.
-	[hereChar == $' 
-		and: [aheadChar == $' 
-				ifTrue: [self step. false]
-				ifFalse: [true]]]
-		whileFalse: 
-			[hereChar == DoItCharacter
-				ifTrue: [^self offEnd: 'Unmatched string quote'].
-			buffer nextPut: self step].
-	self step.
-	token := buffer contents.
-	tokenType := #string"

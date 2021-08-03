@@ -8,4 +8,4 @@ visitCascadeNode: aNode
 			(self isEmptyLineMarker: message) ifFalse: [
 				self visitNode: message.
 				message ~= aNode messages last
-					ifTrue: [stream nextPut: $;]]]]
+					ifTrue: [self stream nextPut: $;]]]]

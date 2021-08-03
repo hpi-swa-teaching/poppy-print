@@ -1,4 +1,4 @@
 visiting
 visitLiteralVariableNode: aNode
 
-	stream nextPutAll: aNode name
+	self stream nextPutAll: aNode name

@@ -1,6 +1,6 @@
 printing
 indent: aNumber around: aBlock
 
-	indent := indent + aNumber.
+	self indent: self indent + aNumber.
 	aBlock value.
-	indent := indent - aNumber
+	self indent: self indent - aNumber

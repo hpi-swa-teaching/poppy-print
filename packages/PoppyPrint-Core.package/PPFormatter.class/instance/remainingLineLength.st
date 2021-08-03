@@ -1,4 +1,4 @@
 helper
 remainingLineLength
 
-	^ self maxLineLength - (stream contents size - (stream contents lastIndexOf: Character cr))
+	^ self maxLineLength - (self stream contents size - (self stream contents lastIndexOf: Character cr))

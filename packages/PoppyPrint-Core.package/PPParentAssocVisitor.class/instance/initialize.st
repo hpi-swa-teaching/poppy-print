@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	parents := Dictionary new
+	self parents: Dictionary new

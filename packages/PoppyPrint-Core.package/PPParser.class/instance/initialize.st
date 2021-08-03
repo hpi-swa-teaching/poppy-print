@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	includeGenerated := false
+	self includeGenerated: false

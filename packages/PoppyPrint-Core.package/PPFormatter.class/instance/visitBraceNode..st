@@ -11,7 +11,7 @@ visitBraceNode: aNode
 	multiLine ifTrue: [
 		aNode elements removeAllSuchThat: [:element | self isNewLineMarker: element]].
 	
-	stream nextPut: ${.
+	self stream nextPut: ${.
 	
 	self indent: (multiLine ifTrue: [1] ifFalse: [0]) around: [
 		multiLine ifTrue: [self newLine].
@@ -24,9 +24,9 @@ visitBraceNode: aNode
 					ifFalse: [
 						(self isEmptyLineMarker: element) ifFalse: [
 							self visitNode: element.
-							isLast ifFalse: [stream nextPut: $.]].
+							isLast ifFalse: [self stream nextPut: $.]].
 						
 						isLast ifFalse: [
-							multiLine ifTrue: [self newLine] ifFalse: [stream space]]]]]].
+							multiLine ifTrue: [self newLine] ifFalse: [self stream space]]]]]].
 	
-	stream nextPut: $}
+	self stream nextPut: $}

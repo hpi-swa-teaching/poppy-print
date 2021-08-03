@@ -1,8 +1,8 @@
 printing
 printBinaryMessage: aNode multiLine: multiLine
 
-	aNode originalSelector ~= #, ifTrue: [stream space].
-	stream
+	aNode originalSelector ~= #, ifTrue: [self stream space].
+	self stream
 		nextPutAll: aNode originalSelector;
 		space.
 	self

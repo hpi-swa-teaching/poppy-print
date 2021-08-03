@@ -3,7 +3,7 @@ printMethodComment: aNode
 
 	aNode comment ifNotNil: [
 		aNode comment do: [:comment |
-			stream crtab: 1.
-			stream nextPut: $".
-			stream nextPutAll: (self prepareMultilineLiteral: comment).
-			stream nextPut: $"]]
+			self stream crtab: 1.
+			self stream nextPut: $".
+			self stream nextPutAll: (self prepareMultilineLiteral: comment).
+			self stream nextPut: $"]]

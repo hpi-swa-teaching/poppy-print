@@ -1,11 +1,11 @@
 printing
 printBlockStart: aNode startWithNewLine: aBoolean
 
-	stream nextPut: $[.
+	self stream nextPut: $[.
 	aNode arguments ifNotEmpty: [:args |
 		args do: [:arg |
-			stream nextPut: $:.
-			stream nextPutAll: arg name.
-			stream space].
-		stream nextPut: $|.
-		aBoolean ifFalse: [stream space]]
+			self stream nextPut: $:.
+			self stream nextPutAll: arg name.
+			self stream space].
+		self stream nextPut: $|.
+		aBoolean ifFalse: [self stream space]]

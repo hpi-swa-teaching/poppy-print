@@ -1,4 +1,4 @@
 printing
 newLine
 
-	stream crtab: indent
+	self stream crtab: self indent
