@@ -7,7 +7,7 @@ evaluateBlockStatements: aNode
 			ifFalse: [
 				self visitNode: statement.
 				statement ~= aNode statements last ifTrue: [
-					stream nextPut: $..
+					self stream nextPut: $..
 					self newLine]].
 		self
 			printAllCommentsOf: statement

@@ -9,5 +9,5 @@ putStopLabelsOf: aString in: aDictionary
 		index > 0
 			ifTrue: [
 				index := index + self stopLabel size.
-				aDictionary add: index -> 2]
-			ifFalse: [aDictionary add: aString size -> 2]]
+				aDictionary add: index -> 0]
+			ifFalse: [aDictionary add: aString size -> 0]]

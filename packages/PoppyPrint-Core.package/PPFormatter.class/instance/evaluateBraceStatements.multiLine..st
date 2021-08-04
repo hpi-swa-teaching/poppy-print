@@ -9,7 +9,7 @@ evaluateBraceStatements: aNode multiLine: multiLine
 				ifFalse: [
 					(self isEmptyLineMarker: element) ifFalse: [
 						self visitNode: element.
-						isLast ifFalse: [stream nextPut: $.]].
+						isLast ifFalse: [self stream nextPut: $.]].
 					
 					isLast ifFalse: [
-						multiLine ifTrue: [self newLine] ifFalse: [stream space]]]]]
+						multiLine ifTrue: [self newLine] ifFalse: [self stream space]]]]]
