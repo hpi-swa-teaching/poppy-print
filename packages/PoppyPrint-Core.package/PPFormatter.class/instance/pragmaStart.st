@@ -1,0 +1,4 @@
+helper
+pragmaStart
+
+	^ 255

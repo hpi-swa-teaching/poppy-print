@@ -3,11 +3,7 @@ visitBlockNode: aNode
 
 	| isMethodBlock startWithNewLine |
 	isMethodBlock := (self parentFor: aNode) isKindOf: MethodNode.
-	startWithNewLine := isMethodBlock not and: [
-		aNode statements size > 0 and: [
-			aNode statements size > 1 or: [
-				(self willBeMultiLine: aNode statements first) or: [
-					aNode statements first comment notNil or: [self hasBlockAsChild: aNode]]]]].
+	startWithNewLine := isMethodBlock not and: [self blockStartWithNewLine: aNode].
 	
 	isMethodBlock
 		ifFalse: [self printBlockStart: aNode startWithNewLine: startWithNewLine].
@@ -18,16 +14,6 @@ visitBlockNode: aNode
 		startWithNewLine ifTrue: [self newLine].
 		
 		self printBlockComment: aNode.
-		aNode statements do: [:statement |
-			(self isEmptyLineMarker: statement)
-				ifTrue: [self newLine]
-				ifFalse: [
-					self visitNode: statement.
-					statement ~= aNode statements last ifTrue: [
-						self stream nextPut: $..
-						self newLine]].
-			self
-				printAllCommentsOf: statement
-				lastStatement: statement = aNode statements last]].
+		self evaluateBlockStatements: aNode].
 	
-	isMethodBlock ifFalse: [self stream nextPut: $]]
+	isMethodBlock ifFalse: [stream nextPut: $]]

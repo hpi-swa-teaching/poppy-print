@@ -9,7 +9,6 @@ needsParenthesisForPrecedence: aNode
 	(precedence = outerPrecedence and: [
 		precedence = 2 and: [aNode ~= (self parentFor: aNode) originalReceiver]])
 		ifFalse: [
-			
 			(precedence <= outerPrecedence and: [
 				precedence ~= 3 or: [outerPrecedence ~= 3]])
 				ifTrue: [^ false]].

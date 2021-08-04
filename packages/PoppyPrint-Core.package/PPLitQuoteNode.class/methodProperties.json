@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"accept:" : "JD 5/31/2021 13:48",
+		"indentSize" : "FT 8/4/2021 12:49",
 		"isByteArray" : "JD 6/2/2021 10:11",
 		"isByteArray:" : "JD 7/4/2021 10:51",
 		"maxLineLength" : "JD 7/12/2021 17:03",
@@ -10,4 +11,4 @@
 		"printKeyAsArrayOn:withIndent:" : "JD 7/4/2021 10:51",
 		"printKeyAsByteArrayOn:withIndent:" : "JD 7/4/2021 10:51",
 		"printKeyOn:withIndent:" : "JD 7/4/2021 10:51",
-		"writeKeyContentOn:with:" : "JD 7/28/2021 13:18" } }
+		"writeKeyContentOn:with:" : "FT 8/4/2021 12:49" } }

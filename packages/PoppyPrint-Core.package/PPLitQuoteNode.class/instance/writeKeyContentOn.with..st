@@ -7,12 +7,12 @@ writeKeyContentOn: aStream with: indent
 		each == Character cr
 			ifTrue: [
 				self newLineOn: aStream with: indent.
-				writtenCharacters := indent - 1 * 4]
+				writtenCharacters := indent - 1 * self indentSize]
 			ifFalse: [
 				remainingLength := self maxLineLength - writtenCharacters - each size.
 				remainingLength < 0 ifTrue: [
 					self newLineOn: aStream with: indent.
-					writtenCharacters := indent - 1 * 4].
+					writtenCharacters := indent - 1 * self indentSize].
 				each printAsLiteralOn: aStream.
 				writtenCharacters := writtenCharacters + each size + 1.
 				each ~= self key last ifTrue: [aStream nextPut: $ ]]]
