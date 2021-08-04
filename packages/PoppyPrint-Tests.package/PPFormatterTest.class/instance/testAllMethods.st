@@ -4,6 +4,7 @@ testAllMethods
 	<timeout: 300>
 
 	| methods results |
+	"This test works locally but not on the Smalltalk CI"
 	methods := self systemNavigation allClasses gather: [:class | class methodDictionary values, class theMetaClass methodDictionary values].
 	results := Dictionary new: methods size.
 	methods
