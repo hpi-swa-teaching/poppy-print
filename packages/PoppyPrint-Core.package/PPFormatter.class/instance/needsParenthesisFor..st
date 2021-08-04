@@ -1,7 +1,7 @@
 printing
 needsParenthesisFor: aNode
 
-	self example: 'simple' receiver: [PPFormatter new] args: [
+	self example: 'simple' receiver: [self class new] args: [
 		{
 			(Parser new
 				parse: '(self assert: 2) ifNotNil: 3'

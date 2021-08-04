@@ -1,4 +1,4 @@
 accessing
 rawContents
 
-	^ stream contents
+	^ self stream contents

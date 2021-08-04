@@ -16,4 +16,4 @@ visitBlockNode: aNode
 		self printBlockComment: aNode.
 		self evaluateBlockStatements: aNode].
 	
-	isMethodBlock ifFalse: [stream nextPut: $]]
+	isMethodBlock ifFalse: [self stream nextPut: $]]

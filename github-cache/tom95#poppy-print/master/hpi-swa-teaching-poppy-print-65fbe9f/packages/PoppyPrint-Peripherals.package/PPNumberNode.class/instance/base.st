@@ -1,4 +1,4 @@
 accessing
 base
 
-	^ key base
+	^ self key base

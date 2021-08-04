@@ -1,6 +1,6 @@
 accessing
 contents
 
-	^ stream contents copy
+	^ self stream contents copy
 		replaceAll: (Character value: 0)
 		with: Character cr

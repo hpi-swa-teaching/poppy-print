@@ -1,4 +1,4 @@
 accessing
 number
 
-	^ key number
+	^ self key number

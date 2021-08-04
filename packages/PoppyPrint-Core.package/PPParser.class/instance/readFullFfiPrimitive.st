@@ -5,5 +5,5 @@ readFullFfiPrimitive
 		self buffer nextPut: self step].
 	self token: PPByteArray new.
 	self token byteArray: (self buffer contents) asByteArray.
-	tokenType := #literal.
+	self tokenType: #literal.
 	self advance.

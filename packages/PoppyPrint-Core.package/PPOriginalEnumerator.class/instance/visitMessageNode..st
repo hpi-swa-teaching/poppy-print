@@ -2,9 +2,9 @@ visiting
 visitMessageNode: aMessageNode
 	"based on: ParseNodeEnumerator >> visitMessageNode:"
 
-	(theSelectBlock isNil or: [theSelectBlock value: aMessageNode])
+	(self theSelectBlock isNil or: [self theSelectBlock value: aMessageNode])
 		ifFalse: [^ nil].
-	theBlock value: aMessageNode.
+	self theBlock value: aMessageNode.
 	"modification"
 	
 	aMessageNode originalReceiver accept: self.

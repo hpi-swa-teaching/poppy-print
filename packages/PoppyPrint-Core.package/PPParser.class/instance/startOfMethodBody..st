@@ -6,17 +6,17 @@ startOfMethodBody: aString
 		cue: (CompilationCue source: aString)
 		failBlock: [^ nil].
 	
-	hereType == #word ifTrue: [^ hereEnd].
+	self hereType == #word ifTrue: [^ self hereEnd].
 	
-	(#(binary verticalBar) includes: hereType)
+	(#(binary verticalBar) includes: self hereType)
 		ifTrue: [
 			self advance.
-			^ hereEnd].
+			^ self hereEnd].
 	
-	hereType == #keyword ifTrue: [ | lastEnd |
-		[hereType == #keyword] whileTrue: [
+	self hereType == #keyword ifTrue: [ | lastEnd |
+		[self hereType == #keyword] whileTrue: [
 			self advance.
-			lastEnd := hereEnd.
+			lastEnd := self hereEnd.
 			self argumentName].
 		^ lastEnd].
 	
