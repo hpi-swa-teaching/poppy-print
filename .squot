@@ -1,5 +1,6 @@
 OrderedDictionary {
 	'packages/PoppyPrint-Core.package' : #SquotCypressCodeSerializer,
 	'packages/PoppyPrint-Tests.package' : #SquotCypressCodeSerializer,
-	'packages/BaselineOfPoppyPrint.package' : #SquotCypressCodeSerializer
+	'packages/BaselineOfPoppyPrint.package' : #SquotCypressCodeSerializer,
+	'packages/PoppyPrint-Peripherals.package' : #SquotCypressCodeSerializer
 }

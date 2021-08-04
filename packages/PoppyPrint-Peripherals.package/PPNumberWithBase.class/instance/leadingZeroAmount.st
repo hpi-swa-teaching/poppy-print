@@ -1,0 +1,4 @@
+accessing
+leadingZeroAmount
+
+	^ leadingZeroAmount

@@ -1,0 +1,4 @@
+testing
+isPPNumberWithBase
+
+	^ true

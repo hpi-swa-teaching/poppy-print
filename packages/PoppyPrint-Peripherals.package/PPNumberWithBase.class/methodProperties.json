@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		">" : "JD 7/4/2021 10:51",
+		"base" : "JD 5/19/2021 10:31",
+		"base:" : "JD 5/19/2021 10:48",
+		"between:and:" : "JD 7/4/2021 10:51",
+		"isInteger" : "JD 7/4/2021 10:51",
+		"isPPNumberWithBase" : "JD 7/4/2021 10:51",
+		"leadingZeroAmount" : "chrrau 6/15/2021 16:55",
+		"leadingZeroAmount:" : "chrrau 6/15/2021 16:55",
+		"negated" : "chrrau 6/15/2021 18:46",
+		"number" : "JD 5/19/2021 10:31",
+		"number:" : "JD 5/19/2021 10:48",
+		"printAsLiteralOn:" : "FT 8/4/2021 12:50",
+		"printOn:" : "chrrau 6/15/2021 18:46",
+		"size" : "JD 7/4/2021 10:50",
+		"standardBase" : "FT 8/4/2021 12:50" } }

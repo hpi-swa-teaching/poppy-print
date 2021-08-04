@@ -1,0 +1,14 @@
+{
+	"category" : "PoppyPrint-Peripherals",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "T.S. 7/30/2021 15:08",
+	"instvars" : [
+		"isByteArray" ],
+	"name" : "PPLitQuoteNode",
+	"pools" : [
+		 ],
+	"super" : "LiteralNode",
+	"type" : "normal" }
