@@ -1,4 +1,0 @@
-helper
-indentSize
-
-	^ 4

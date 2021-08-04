@@ -1,4 +1,0 @@
-helper
-standardBase
-
-	^ 10

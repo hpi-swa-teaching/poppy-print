@@ -1,1 +1,0 @@
-A PPNumberWithBase is a Number which also stores its base and amount of leading zeros

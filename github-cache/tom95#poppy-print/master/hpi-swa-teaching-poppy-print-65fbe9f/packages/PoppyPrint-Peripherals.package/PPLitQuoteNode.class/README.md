@@ -1,1 +1,0 @@
-A PPLitQuoteNode is a Parse Tree leaf representing an Array or ByteArray.

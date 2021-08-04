@@ -1,4 +1,0 @@
-accessing
-isByteArray
-
-	^ isByteArray

@@ -1,4 +1,0 @@
-constants
-maxLineLength
-
-	^ 82
