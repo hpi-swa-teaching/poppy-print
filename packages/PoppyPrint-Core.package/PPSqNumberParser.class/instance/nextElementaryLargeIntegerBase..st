@@ -11,14 +11,22 @@ nextElementaryLargeIntegerBase: aRadix
 	nDigits := 0.
 	lastNonZero := 0.
 	"modification"
+	
 	inLeadingZeros := true.
 	[
-		value isLarge ifTrue: [inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].^ value].
-		char := sourceStream next ifNil: [inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].^ value].
+		value isLarge ifTrue: [
+			inLeadingZeros
+				ifTrue: [leadingZeroAmount := leadingZeroAmount - 1].
+			^ value].
+		char := sourceStream next ifNil: [
+			inLeadingZeros
+				ifTrue: [leadingZeroAmount := leadingZeroAmount - 1].
+			^ value].
 		((digit := char digitValue) < 0 or: [digit >= aRadix])
 			ifTrue: [
 				sourceStream skip: -1.
-				inLeadingZeros ifTrue: [leadingZeroAmount := leadingZeroAmount -1].
+				inLeadingZeros
+					ifTrue: [leadingZeroAmount := leadingZeroAmount - 1].
 				^ value].
 		nDigits := nDigits + 1.
 		digit = 0
@@ -30,4 +38,4 @@ nextElementaryLargeIntegerBase: aRadix
 				value := value * aRadix.
 				(inLeadingZeros and: [self leadingZerosSettled not])
 					ifTrue: [self leadingZeroAmount: self leadingZeroAmount + 1]]] repeat
-			"end of modification"
+	"end of modification"

@@ -1,4 +1,4 @@
 accessing
 byteArray: anObject
 
-	byteArray := anObject.
+	byteArray := anObject

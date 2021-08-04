@@ -20,5 +20,6 @@ primitive: aPPNumberWithBaseOrString error: errorCodeVariableOrNil
 								primitive: aPPNumberWithBaseOrString
 								module: nil
 								error: errorCodeVariableOrNil]
-						ifFalse: [self expected: 'Indexed primitive']
-					"end of modification"]]
+						ifFalse: [
+							self expected: 'Indexed primitive'
+							"end of modification"]]]
