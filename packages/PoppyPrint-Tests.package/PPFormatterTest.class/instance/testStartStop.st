@@ -1,7 +1,7 @@
 tests - nonFormattingLabels
 testStartStop
 
-	|baseString desiredString|
+	| baseString desiredString |
 	baseString := 'basicMethodName
 	| instanceA |
 	instanceA := 1. instanceA := 2. 
@@ -21,4 +21,4 @@ testStartStop
 	instanceA := 1.
 	instanceA := 2'.
 	
-	self canFormat: baseString as: desiredString.
+	self canFormat: baseString as: desiredString

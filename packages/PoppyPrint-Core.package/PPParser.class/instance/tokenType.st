@@ -1,3 +1,4 @@
 accessing
 tokenType
-	^tokenType
+
+	^ tokenType

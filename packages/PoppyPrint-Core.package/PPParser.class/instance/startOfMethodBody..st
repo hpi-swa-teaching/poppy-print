@@ -8,7 +8,7 @@ startOfMethodBody: aString
 	
 	self hereType == #word ifTrue: [^ self hereEnd].
 	
-	(#(binary verticalBar) includes: self hereType)
+	(#(#binary #verticalBar) includes: self hereType)
 		ifTrue: [
 			self advance.
 			^ self hereEnd].

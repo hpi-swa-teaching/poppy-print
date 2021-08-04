@@ -1,7 +1,7 @@
 tests - nonFormattingLabels
 testLabelInBlock
 
-	|baseString desiredString|
+	| baseString desiredString |
 	baseString := 'basicMethodName
 	| instanceA |
 	instanceA := 1. instanceA := 2.
@@ -25,4 +25,4 @@ testLabelInBlock
 	instanceA := 1.
 	insanceA := 2'.
 	
-	self canFormat: baseString as: desiredString.
+	self canFormat: baseString as: desiredString

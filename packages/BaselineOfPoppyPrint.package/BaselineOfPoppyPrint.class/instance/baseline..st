@@ -4,10 +4,13 @@ baseline: spec
 
 	spec for: #common do: [
 		spec
-			package: 'PoppyPrint-Core' with: [spec postLoadDoIt: #postLoadCore;
-													requires: #('peripherals')];
+			package: 'PoppyPrint-Core' with: [
+				spec
+					postLoadDoIt: #postLoadCore;
+					requires: #('peripherals')];
 			package: 'PoppyPrint-Peripherals';
-			package: 'PoppyPrint-Tests' with: [spec requires: #('default' 'peripherals')].
+			package: 'PoppyPrint-Tests'
+				with: [spec requires: #('default' 'peripherals')].
 		
 		spec
 			group: 'default' with: #('PoppyPrint-Core');

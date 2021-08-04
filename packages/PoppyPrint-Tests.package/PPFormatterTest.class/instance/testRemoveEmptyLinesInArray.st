@@ -1,15 +1,16 @@
 tests - keepNewLines
 testRemoveEmptyLinesInArray
 
-	self canFormat: 'testArray
+	self
+		canFormat: 'testArray
 
 	#(10 10 10 
 	
 	
 		10 
-		10)' as: 'testArray
+		10)'
+		as: 'testArray
 
 	#(10 10 10 
 		10 
 		10)'
-	

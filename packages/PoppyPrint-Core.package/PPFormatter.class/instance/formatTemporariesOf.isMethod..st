@@ -9,6 +9,8 @@ formatTemporariesOf: aNode isMethod: isMethodBlock
 	temporaries ifNotEmpty: [:temps |
 		isMethodBlock ifFalse: [self stream space].
 		self stream nextPutAll: '| '.
-		temps do: [:temp | self stream nextPutAll: temp name] separatedBy: [self stream space].
+		temps
+			do: [:temp | self stream nextPutAll: temp name]
+			separatedBy: [self stream space].
 		self stream nextPutAll: ' |'.
 		isMethodBlock ifTrue: [self newLine]]
