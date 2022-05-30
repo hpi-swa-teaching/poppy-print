@@ -4,15 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "tobe 3/11/2021 09:06",
+	"commentStamp" : "",
 	"instvars" : [
-		"stream",
-		"indent",
-		"parents",
-		"preFormatCache",
-		"comments",
-		"config" ],
-	"name" : "PPFormatter",
+		"spaceBeforeCommaInArray",
+		"spaceBeforePointInArray" ],
+	"name" : "PPFormatterConfig",
 	"pools" : [
 		 ],
 	"super" : "Object",
