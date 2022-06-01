@@ -1,5 +1,5 @@
 accessing
 spaceBeforeCommaInArray
 
-	^ spaceBeforeCommaInArray ifNil: [spaceBeforeCommaInArray := true].
+	^ spaceBeforeCommaInArray ifNil: [spaceBeforeCommaInArray := false].
 	

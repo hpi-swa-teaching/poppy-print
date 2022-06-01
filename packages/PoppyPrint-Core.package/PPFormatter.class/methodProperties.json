@@ -8,7 +8,7 @@
 		"formatMethod:" : "tobe 3/10/2021 13:32",
 		"formatPackage:" : "tobe 3/10/2021 14:59",
 		"formatString:class:noPattern:" : "tobe 3/10/2021 15:47",
-		"formatString:class:noPattern:notifying:" : "tobe 3/20/2021 10:44",
+		"formatString:class:noPattern:notifying:" : "Alexander Ungefug 6/1/2022 15:37",
 		"stripMethodPattern:" : "tobe 3/19/2021 18:51" },
 	"instance" : {
 		"comments" : "Alexander Ungefug 5/30/2022 19:04",
@@ -58,7 +58,7 @@
 		"visitMessageNode:" : "Alexander Ungefug 5/30/2022 19:13",
 		"visitMethodNode:" : "tobe 3/11/2021 11:38",
 		"visitNode:" : "tobe 3/11/2021 10:00",
-		"visitReturnNode:" : "tobe 3/10/2021 14:58",
+		"visitReturnNode:" : "Alexander Ungefug 6/1/2022 15:33",
 		"visitTempVariableNode:" : "tobe 3/10/2021 14:58",
 		"visitTrackedAssignmentNode:" : "tobe 3/10/2021 14:58",
 		"visitVariableNode:" : "tobe 3/10/2021 14:58",
