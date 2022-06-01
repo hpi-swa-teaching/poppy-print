@@ -8,5 +8,6 @@ reset
 	wordWidth := 0.
 	tabCount := 0.
 	index := 1.
+	inString := false.
 	
 	self skipToEndOfFirstWord

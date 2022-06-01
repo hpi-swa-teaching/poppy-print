@@ -14,7 +14,8 @@
 		"wordWidth",
 		"tabCount",
 		"index",
-		"maxWidth" ],
+		"maxWidth",
+		"inString" ],
 	"name" : "PPWindowFormatter",
 	"pools" : [
 		 ],

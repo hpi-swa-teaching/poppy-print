@@ -1,5 +1,5 @@
 tests
-testFormatingToZeroWidth
+testFormatingToZeroWidth1
 
 	self canFormat:
 	'test
