@@ -4,9 +4,9 @@ testSpaceBeforeCommaInArray
  self canFormat: 
 'test
 
-	{0. 0. 0. 0. 0. 1}' 
+	{0, 0, 0, 0, 0, 1}' 
 	as: 
 'test
 
-	{0 . 0 . 0 . 0 . 0 . 1}' 
-	with: self getConfigSpacesinArray
+	{0 , 0 , 0 , 0 , 0 , 1}' 
+	with: self getConfigSpacesBeforeCommainArray
