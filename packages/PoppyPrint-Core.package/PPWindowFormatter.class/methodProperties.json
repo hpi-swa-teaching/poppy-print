@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"charAt:" : "JW 5/31/2022 11:05",
+		"charAtIndex" : "JW 5/31/2022 11:05",
+		"countTabs" : "JW 5/31/2022 11:12",
+		"format:toWindowWidth:" : "JW 5/31/2022 11:25",
+		"formatToStandardWindowWidth:" : "JW 6/1/2022 11:04",
+		"getNextWord" : "JW 5/31/2022 11:14",
+		"putIndentedNewlineAndWord" : "JW 5/31/2022 11:16",
+		"putNewlineAndCountTabs" : "JW 5/31/2022 11:27",
+		"putSeperatorAndWord" : "JW 5/31/2022 11:21",
+		"reset" : "JW 5/31/2022 11:10",
+		"skipToEndOfFirstWord" : "JW 5/31/2022 11:08",
+		"test" : "JW 6/1/2022 10:49" } }

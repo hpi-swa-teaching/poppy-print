@@ -1,0 +1,22 @@
+{
+	"category" : "PoppyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"string",
+		"resultStream",
+		"wordStream",
+		"seperators",
+		"lineWidth",
+		"wordWidth",
+		"tabCount",
+		"index",
+		"maxWidth" ],
+	"name" : "PPWindowFormatter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
