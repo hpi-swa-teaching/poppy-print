@@ -2,6 +2,10 @@
 	"class" : {
 		"default" : "Alexander Ungefug 5/30/2022 19:03" },
 	"instance" : {
+		"formatToMaxLineWidth" : "JW 6/1/2022 19:39",
+		"formatToMaxLineWidth:" : "JW 6/1/2022 19:28",
+		"maxLineWidth" : "JW 6/1/2022 19:28",
+		"maxLineWidth:" : "JW 6/1/2022 19:28",
 		"spaceBeforeCommaInArray" : "Alexander Ungefug 5/31/2022 11:00",
 		"spaceBeforeCommaInArray:" : "Alexander Ungefug 5/30/2022 18:59",
 		"spaceBeforePointInArray" : "Alexander Ungefug 6/1/2022 15:59",
