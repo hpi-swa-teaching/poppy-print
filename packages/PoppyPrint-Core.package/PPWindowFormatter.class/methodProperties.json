@@ -5,11 +5,10 @@
 		"charAt:" : "JW 5/31/2022 11:05",
 		"charAtIndex" : "JW 5/31/2022 11:05",
 		"countTabs" : "JW 5/31/2022 11:12",
-		"format:toWindowWidth:" : "JW 5/31/2022 11:25",
+		"format:withWindowWidth:" : "JW 6/1/2022 20:52",
 		"getNextWord" : "JW 6/1/2022 20:09",
 		"putIndentedNewlineAndWord" : "JW 5/31/2022 11:16",
 		"putNewlineAndCountTabs" : "JW 5/31/2022 11:27",
 		"putSeperatorAndWord" : "JW 5/31/2022 11:21",
 		"reset" : "JW 6/1/2022 20:05",
-		"skipToEndOfFirstWord" : "JW 6/1/2022 20:10",
-		"test" : "JW 6/1/2022 19:46" } }
+		"skipToEndOfFirstWord" : "JW 6/1/2022 20:10" } }

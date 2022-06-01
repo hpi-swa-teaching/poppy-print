@@ -1,4 +1,4 @@
 accessing
 formatToMaxLineWidth
 
-	^ formatToMaxLineWidth ifNil: [formatToMaxLineWidth := false].
+	^ formatToMaxLineWidth ifNil: [formatToMaxLineWidth := false]

@@ -9,7 +9,7 @@
 		"formatPackage:" : "tobe 3/10/2021 14:59",
 		"formatString:class:noPattern:" : "tobe 3/10/2021 15:47",
 		"formatString:class:noPattern:notifying:" : "JW 6/1/2022 19:32",
-		"formatString:class:noPattern:notifying:with:" : "JW 6/1/2022 19:31",
+		"formatString:class:noPattern:notifying:with:" : "JW 6/1/2022 20:49",
 		"formatString:class:noPattern:with:" : "Alexander Ungefug 6/1/2022 16:06",
 		"stripMethodPattern:" : "tobe 3/19/2021 18:51" },
 	"instance" : {
@@ -60,7 +60,7 @@
 		"visitLiteralNode:" : "tobe 3/11/2021 09:09",
 		"visitLiteralVariableNode:" : "tobe 3/10/2021 14:58",
 		"visitMessageNode:" : "Alexander Ungefug 5/30/2022 19:13",
-		"visitMethodNode:" : "tobe 3/11/2021 11:38",
+		"visitMethodNode:" : "JW 6/1/2022 20:51",
 		"visitNode:" : "tobe 3/11/2021 10:00",
 		"visitReturnNode:" : "Alexander Ungefug 6/1/2022 15:33",
 		"visitTempVariableNode:" : "tobe 3/10/2021 14:58",

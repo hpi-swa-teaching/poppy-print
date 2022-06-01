@@ -1,4 +1,4 @@
 helper
 canFormat: aString toStandardWindowWidth: anotherString
 
-	self assert: anotherString equals: (PPWindowFormatter new format: aString toWindowWidth: 83)
+	self assert: anotherString equals: (PPWindowFormatter new format: aString withWindowWidth: 83)
