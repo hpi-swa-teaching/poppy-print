@@ -2,4 +2,5 @@ visiting
 visitReturnNode: aNode
 
 	stream nextPutAll: '^ '.
-	self visitNode: aNode expr
+	self visitNode: aNode expr.
+	
