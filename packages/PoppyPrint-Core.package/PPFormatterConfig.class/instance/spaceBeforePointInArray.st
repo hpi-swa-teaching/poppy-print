@@ -1,4 +1,4 @@
 accessing
 spaceBeforePointInArray
 
-	^ spaceBeforePointInArray ifNil: [spaceBeforePointInArray := true]
+	^ spaceBeforePointInArray ifNil: [spaceBeforePointInArray := false]
