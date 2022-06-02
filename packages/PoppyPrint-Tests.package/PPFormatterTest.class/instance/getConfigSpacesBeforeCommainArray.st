@@ -1,4 +1,0 @@
-helper
-getConfigSpacesBeforeCommainArray
-
-	^ PPFormatterConfig default spaceBeforeCommaInArray: true
