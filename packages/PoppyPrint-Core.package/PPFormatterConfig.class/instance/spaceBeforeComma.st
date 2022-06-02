@@ -1,5 +1,5 @@
 accessing
 spaceBeforeComma
 
-	^ spaceBeforeComma ifNil: [spaceBeforeComma := true].
+	^ spaceBeforeComma ifNil: [spaceBeforeComma := false].
 	
