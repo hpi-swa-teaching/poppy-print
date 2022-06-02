@@ -1,4 +1,4 @@
 accessing
-spaceBeforePointInArray: anObject
+spaceBeforePointInArray: aBoolean
 
-	spaceBeforePointInArray := anObject.
+	spaceBeforePointInArray := aBoolean
