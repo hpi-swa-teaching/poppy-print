@@ -1,4 +1,4 @@
 accessing
-spaceBeforeComma: anObject
+spaceBeforeComma: aBoolean
 
-	spaceBeforeComma := anObject.
+	spaceBeforeComma := aBoolean
