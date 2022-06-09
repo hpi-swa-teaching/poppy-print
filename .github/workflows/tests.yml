@@ -13,8 +13,6 @@ jobs:
           - Squeak64-5.3
           #- Squeak64-5.2
     name: Test ${{ matrix.smalltalk }} on ${{ matrix.os }}
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - uses: hpi-swa/setup-smalltalkCI@v1
