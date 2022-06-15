@@ -1,11 +1,9 @@
 tests - comments
 testInlineCommentWithNewline
 
-	self
-		canFormat: 'testMethod true "test"
+	self canFormat: 'testMethod true "test"
 
-	or: [false]'
-		as: 'testMethod
+	or: [false]' as: 'testMethod
 	"test"
 
 	true or: [false]'

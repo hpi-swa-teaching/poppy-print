@@ -1,0 +1,4 @@
+helper
+getConfigSpacesBeforePointInArray
+
+	^ PPFormatterConfig default spaceBeforePointInArray: true

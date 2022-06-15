@@ -1,0 +1,15 @@
+{
+	"category" : "PoppyPrint-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"spaceBeforeComma",
+		"spaceBeforePointInArray" ],
+	"name" : "PPFormatterConfig",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

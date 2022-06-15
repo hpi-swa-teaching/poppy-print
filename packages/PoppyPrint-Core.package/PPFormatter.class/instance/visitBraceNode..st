@@ -12,10 +12,11 @@ visitBraceNode: aNode
 		
 		aNode elements do: [:element | | isLast |
 			isLast := element = aNode elements last.
-			
 			(self isEmptyLineMarker: element) ifFalse: [
 				self visitNode: element.
-				isLast ifFalse: [stream nextPut: $.]].
+				isLast ifFalse: [
+					config spaceBeforePointInArray ifTrue: [stream space].
+					stream nextPut: $.]].
 			
 			isLast ifFalse: [multiLine ifTrue: [self newLine] ifFalse: [stream space]]]].
 	

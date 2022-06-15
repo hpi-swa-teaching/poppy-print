@@ -13,4 +13,4 @@ printAllCommentsOf: aNode lastStatement: aBoolean
 		stream nextPut: $".
 		stream nextPutAll: (self prepareMultilineLiteral: comment).
 		stream nextPut: $".
-		(aBoolean not or: [comment ~= myStatementsComments last]) ifTrue: [self newLine]].
+		(aBoolean not or: [comment ~= myStatementsComments last]) ifTrue: [self newLine]]

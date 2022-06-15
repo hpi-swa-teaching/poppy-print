@@ -1,11 +1,8 @@
 helper
 startOfMethodBody: aString
 
-	self
-		init: (ReadStream on: aString asString)
-		cue: (CompilationCue source: aString)
-		failBlock: [^ nil].
-
+	self init: (ReadStream on: aString asString) cue: (CompilationCue source: aString) failBlock: [^ nil].
+	
 	hereType == #word ifTrue: [^ hereEnd].
 	
 	(hereType == #binary or: [hereType == #verticalBar]) ifTrue: [
