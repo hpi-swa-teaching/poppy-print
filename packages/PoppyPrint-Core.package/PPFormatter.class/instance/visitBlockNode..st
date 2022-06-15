@@ -18,7 +18,7 @@ visitBlockNode: aNode
 				ifTrue: [self newLine]
 				ifFalse: [
 					self visitNode: statement.
-					statement ~= aNode statements last ifTrue: [
+					(statement ~= aNode statements last or: [config dotAtEndOfMethode and: [isMethodBlock and: [(statement isKindOf: ReturnNode) not]]]) ifTrue: [
 						stream nextPut: $..
 						self newLine]].
 			self printAllCommentsOf: statement lastStatement: statement = aNode statements last]].
