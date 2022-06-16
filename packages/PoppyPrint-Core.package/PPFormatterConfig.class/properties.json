@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"spaceBeforeCommaInArray",
+		"spaceBeforeComma",
 		"spaceBeforePointInArray",
-		"formatToMaxLineWidth",
-		"maxLineWidth" ],
+    "formatToMaxLineWidth",
+		"maxLineWidth"],
 	"name" : "PPFormatterConfig",
 	"pools" : [
 		 ],

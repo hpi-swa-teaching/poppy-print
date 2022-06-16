@@ -1,7 +1,7 @@
 printing
 printBinaryMessage: aNode multiLine: multiLine
 
-	(aNode originalSelector ~= #, or: [config spaceBeforeCommaInArray]) ifTrue: [stream space].
+	(aNode originalSelector ~= #, or: [config spaceBeforeComma]) ifTrue: [stream space].
 	stream 
 		nextPutAll: aNode originalSelector;
 		space.
