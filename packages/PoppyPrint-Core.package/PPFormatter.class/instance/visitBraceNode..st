@@ -10,13 +10,13 @@ visitBraceNode: aNode
 	self indent: (multiLine ifTrue: [1] ifFalse: [0]) around: [
 		multiLine ifTrue: [self newLine].
 		
-		aNode elements do: [:element | | isLast |				
-			isLast := element = aNode elements last.			
+		aNode elements do: [:element | | isLast |
+			isLast := element = aNode elements last.
 			(self isEmptyLineMarker: element) ifFalse: [
-				
-				self visitNode: element.				
-				isLast ifFalse: [config spaceBeforePointInArray ifTrue: [stream space].  stream nextPut: $.]].
-			
+				self visitNode: element.
+				isLast ifFalse: [
+					config spaceBeforePointInArray ifTrue: [stream space].
+					stream nextPut: $.]].
 			
 			isLast ifFalse: [multiLine ifTrue: [self newLine] ifFalse: [stream space]]]].
 	

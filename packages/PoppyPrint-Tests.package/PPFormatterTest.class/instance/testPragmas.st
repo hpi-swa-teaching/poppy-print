@@ -8,7 +8,6 @@ testPragmas
 	<pragma: 3 hello: ''abc''>
 
 	self test'.
-	self assert: string equals: (PPFormatter
-		formatString: string
-		class: UndefinedObject
-		noPattern: false)
+	self
+		assert: string
+		equals: (PPFormatter formatString: string class: UndefinedObject noPattern: false)
