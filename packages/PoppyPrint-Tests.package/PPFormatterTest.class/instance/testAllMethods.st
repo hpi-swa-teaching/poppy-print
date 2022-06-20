@@ -1,4 +1,4 @@
-examples
+tests - examples
 testAllMethods
 	"seconds"
 	<timeout: 180>
