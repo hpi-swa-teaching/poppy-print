@@ -24,6 +24,5 @@ visitBlockNode: aNode
 								stream nextPut: $..
 								self newLine]]].
 			self printAllCommentsOf: statement lastStatement: statement = aNode statements last]].
-
 	
 	isMethodBlock ifFalse: [stream nextPut: $]]
