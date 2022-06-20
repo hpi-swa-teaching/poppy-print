@@ -1,4 +1,4 @@
-tests
+examples
 testAllMethods
 	<timeout: 180 "seconds">
 
