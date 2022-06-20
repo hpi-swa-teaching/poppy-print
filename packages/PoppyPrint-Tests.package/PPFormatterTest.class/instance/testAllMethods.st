@@ -1,6 +1,7 @@
 examples
 testAllMethods
-	<timeout: 180 "seconds">
+	"seconds"
+	<timeout: 180>
 
 	| methods results |
 	methods := self systemNavigation allClasses gather: [:class | class methodDictionary values, class theMetaClass methodDictionary values].
