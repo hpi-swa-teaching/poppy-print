@@ -1,4 +1,4 @@
 accessing
 config: aPPFormatterConfig
 
-	config := aPPFormatterConfig.
+	config := aPPFormatterConfig

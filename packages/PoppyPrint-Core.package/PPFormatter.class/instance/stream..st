@@ -1,4 +1,4 @@
 accessing
 stream: anObject
 
-	stream := anObject.
+	stream := anObject

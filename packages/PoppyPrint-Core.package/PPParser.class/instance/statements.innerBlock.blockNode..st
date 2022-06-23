@@ -30,11 +30,15 @@ statements: argNodes innerBlock: inner blockNode: theBlockNode
 							self addComment.
 							"CHANGE"
 							(self includeGenerated and: [stmts size = 0]) ifTrue: [
-								stmts addLast: (inner ifTrue: [encoder encodeVariable: 'nil'] ifFalse: [encoder lookupVariable: 'self' ifAbsent: [self assert: false]])]]].
+								stmts addLast: (inner
+									ifTrue: [encoder encodeVariable: 'nil']
+									ifFalse: [encoder lookupVariable: 'self' ifAbsent: [self assert: false]])]]].
 			"returns ifTrue: 
 				[self match: #period.
 				 (hereType == #rightBracket or: [hereType == #doIt]) ifFalse: [^ self expected: 'End of block']]."
-			"returns not and: ["self match: #period"]"] whileTrue].
+			"returns not and: ["
+			self match: #period
+			"]"] whileTrue].
 	theBlockNode arguments: argNodes statements: stmts returns: returns from: encoder.
 	parseNode := theBlockNode.
 	" THIS IS ADDED: "

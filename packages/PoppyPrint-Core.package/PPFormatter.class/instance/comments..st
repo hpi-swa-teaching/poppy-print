@@ -1,4 +1,4 @@
 accessing
 comments: anObject
 
-	comments := anObject.
+	comments := anObject
