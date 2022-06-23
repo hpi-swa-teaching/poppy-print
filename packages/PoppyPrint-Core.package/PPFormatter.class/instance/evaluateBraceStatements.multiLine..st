@@ -4,10 +4,10 @@ evaluateBraceStatements: aNode multiLine: multiLine
 	aNode elements do: [:element | | isLast |
 		isLast := element = aNode elements last.
 		((self isOptionalNewLineMarker: element) and: multiLine) ifFalse: [
-			((self isEmptyLineMarker: element) or: (self isOptionalEmptyLineMarker: element))
+			((self isEmptyLineMarker: element) or: [self isOptionalEmptyLineMarker: element])
 				ifTrue: [self newLine]
 				ifFalse: [
-					((self isEmptyLineMarker: element) or: (self isOptionalNewLineMarker: element)) ifFalse: [
+					((self isEmptyLineMarker: element) or: [self isOptionalNewLineMarker: element]) ifFalse: [
 						self visitNode: element.
 						isLast ifFalse: [
 							config spaceBeforePointInArray ifTrue: [stream space].
