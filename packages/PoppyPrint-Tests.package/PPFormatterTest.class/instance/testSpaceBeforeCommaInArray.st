@@ -9,4 +9,4 @@ testSpaceBeforeCommaInArray
 'test
 
 	{0 , 0 , 0 , 0 , 0 , 1}' 
-	with: self getConfigSpacesBeforeCommainArray
+	with: self getConfigSpacesBeforeCommaInArray

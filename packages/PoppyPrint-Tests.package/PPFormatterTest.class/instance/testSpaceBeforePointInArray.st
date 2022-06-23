@@ -9,4 +9,4 @@ testSpaceBeforePointInArray
 'test
 
 	{0 . 0 . 0 . 0 . 0 . 1}' 
-	with: self getConfigSpacesBeforePointinArray
+	with: self getConfigSpacesBeforePointInArray

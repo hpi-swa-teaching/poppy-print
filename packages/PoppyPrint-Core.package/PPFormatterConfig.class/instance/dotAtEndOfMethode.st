@@ -1,4 +1,4 @@
 accessing
 dotAtEndOfMethode
 
-	^ dotAtEndOfMethode ifNil: [dotAtEndOfMethode := true]
+	^ dotAtEndOfMethode ifNil: [dotAtEndOfMethode := false]
