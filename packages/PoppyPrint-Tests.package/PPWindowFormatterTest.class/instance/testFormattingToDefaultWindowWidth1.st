@@ -1,5 +1,5 @@
 tests
-testFormatingToDefaultWindowWidth1
+testFormattingToDefaultWindowWidth1
 
 	self canFormat:
 	'test
