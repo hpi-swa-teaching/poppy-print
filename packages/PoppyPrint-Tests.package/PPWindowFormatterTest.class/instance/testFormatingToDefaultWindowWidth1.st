@@ -1,12 +1,12 @@
 tests
-testFormatingToWindowWidth1
+testFormatingToDefaultWindowWidth1
 
 	self canFormat:
 	'test
 	ertad aweasd wed
 	asdasd
 		asdasd asdasd asd asd as dd'
-	toStandardWindowWidth:
+	toDefaultWindowWidth:
 	'test
 	ertad aweasd wed
 	asdasd

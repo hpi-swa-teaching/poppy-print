@@ -1,5 +1,5 @@
 tests - WindowWidth
-testStandaredWindowWidth2
+testSmallWindowWidth2
 
  self canFormat: 
 'test

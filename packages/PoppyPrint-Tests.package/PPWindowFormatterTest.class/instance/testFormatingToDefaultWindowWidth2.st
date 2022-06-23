@@ -1,9 +1,9 @@
 tests
-testFormatingToWindowWidth2
+testFormatingToDefaultWindowWidth2
 
 	self canFormat:
 	'test
 	abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc'
-	toStandardWindowWidth:
+	toDefaultWindowWidth:
 	'test
 	abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc'

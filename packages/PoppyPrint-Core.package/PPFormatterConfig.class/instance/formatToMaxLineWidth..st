@@ -1,4 +1,4 @@
 accessing
-formatToMaxLineWidth: anObject
+formatToMaxLineWidth: aBoolean
 
-	formatToMaxLineWidth := anObject
+	formatToMaxLineWidth := aBoolean

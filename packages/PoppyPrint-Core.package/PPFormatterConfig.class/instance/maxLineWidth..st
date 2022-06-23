@@ -1,4 +1,4 @@
 accessing
-maxLineWidth: anObject
+maxLineWidth: anInteger
 
-	maxLineWidth := anObject
+	maxLineWidth := anInteger
