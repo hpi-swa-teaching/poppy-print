@@ -15,6 +15,8 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject with
 			notifying: anObject
 			ifFail: nil.
 	
+	(methodNode hasPragma: #ppIgnore) ifTrue: [^ aString].
+	
 	formatter := self new
 		initForNode: methodNode;
 		config: aPPFormatterConfig.
@@ -23,6 +25,9 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject with
 	result := aBoolean
 		ifTrue: [self stripMethodPattern: formatter contents]
 		ifFalse: [formatter contents].
-	aPPFormatterConfig formatToMaxLineWidth ifTrue: [result := PPWindowFormatter new format: result withWindowWidth: aPPFormatterConfig maxLineWidth].
+	aPPFormatterConfig formatToMaxLineWidth ifTrue: [
+		result := PPWindowFormatter new
+			format: result
+			withWindowWidth: aPPFormatterConfig maxLineWidth].
 	
 	^ result
