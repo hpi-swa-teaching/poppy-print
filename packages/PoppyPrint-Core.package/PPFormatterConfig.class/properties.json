@@ -8,7 +8,7 @@
 	"instvars" : [
 		"spaceBeforeComma",
 		"spaceBeforePointInArray",
-		"dotAtEndOfMethode" ],
+		"dotAtEndOfMethod" ],
 	"name" : "PPFormatterConfig",
 	"pools" : [
 		 ],

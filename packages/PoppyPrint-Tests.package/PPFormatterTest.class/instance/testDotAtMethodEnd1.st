@@ -1,8 +1,8 @@
-tests - dotAtMethodeEnd
-testDotAtMethodeEnd3
+tests - dotAtMethodEnd
+testDotAtMethodEnd1
 
  self canFormat: 
 'test
 
-	[1 + 1].'
+	1 + 1.'
 	with: self getConfigDotAtMethodEnd

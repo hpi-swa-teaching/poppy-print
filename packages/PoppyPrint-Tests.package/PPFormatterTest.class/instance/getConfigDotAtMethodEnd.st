@@ -1,4 +1,4 @@
 helper
 getConfigDotAtMethodEnd
 
-	^ PPFormatterConfig default dotAtEndOfMethode: true
+	^ PPFormatterConfig default dotAtEndOfMethod: true
