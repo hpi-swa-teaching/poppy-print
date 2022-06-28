@@ -4,6 +4,10 @@
 	"instance" : {
 		"dotAtEndOfMethod" : "JW 6/28/2022 12:16",
 		"dotAtEndOfMethod:" : "JW 6/28/2022 12:17",
+		"formatToMaxLineWidth" : "JW 6/1/2022 20:57",
+		"formatToMaxLineWidth:" : "JW 6/23/2022 10:53",
+		"maxLineWidth" : "JW 6/1/2022 19:28",
+		"maxLineWidth:" : "JW 6/23/2022 10:52",
 		"spaceBeforeComma" : "KD 6/15/2022 16:07",
 		"spaceBeforeComma:" : "YH 6/2/2022 14:16",
 		"spaceBeforePointInArray" : "Alexander Ungefug 6/1/2022 15:59",
