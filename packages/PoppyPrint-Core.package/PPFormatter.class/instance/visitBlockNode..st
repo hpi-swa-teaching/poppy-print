@@ -14,11 +14,15 @@ visitBlockNode: aNode
 		
 		self printBlockComment: aNode.
 		aNode statements do: [:statement |
-			(self isEmptyLineMarker: statement) ifTrue: [self newLine] ifFalse: [
-				self visitNode: statement.
-				statement ~= aNode statements last ifTrue: [
-					stream nextPut: $..
-					self newLine]].
+			(self isEmptyLineMarker: statement)
+				ifTrue: [self newLine]
+				ifFalse: [
+					(self isOptionalNewLineMarker: statement)
+						ifFalse: [
+							self visitNode: statement.
+							statement ~= aNode statements last ifTrue: [
+								stream nextPut: $..
+								self newLine]]].
 			self printAllCommentsOf: statement lastStatement: statement = aNode statements last]].
 	
 	isMethodBlock ifFalse: [stream nextPut: $]]
