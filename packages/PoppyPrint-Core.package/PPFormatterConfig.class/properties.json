@@ -9,7 +9,8 @@
 		"spaceBeforeComma",
 		"spaceBeforePointInArray",
 		"formatToMaxLineWidth",
-		"maxLineWidth" ],
+		"maxLineWidth",
+		"keepCrsInArray" ],
 	"name" : "PPFormatterConfig",
 	"pools" : [
 		 ],
