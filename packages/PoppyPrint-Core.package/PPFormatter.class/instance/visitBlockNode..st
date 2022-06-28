@@ -17,7 +17,7 @@ visitBlockNode: aNode
 			(self isEmptyLineMarker: statement)
 				ifTrue: [self newLine]
 				ifFalse: [
-					((self isOptionalEmptyLineMarker: statement) or: (self isOptionalNewLineMarker: statement))
+					((self isOptionalEmptyLineMarker: statement) or: [self isOptionalNewLineMarker: statement])
 						ifFalse: [
 							self visitNode: statement.
 							statement ~= aNode statements last ifTrue: [
