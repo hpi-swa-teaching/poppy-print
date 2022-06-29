@@ -17,12 +17,11 @@ visitBlockNode: aNode
 			(self isEmptyLineMarker: statement)
 				ifTrue: [self newLine]
 				ifFalse: [
-					((self isOptionalEmptyLineMarker: statement) or: [self isOptionalNewLineMarker: statement])
-						ifFalse: [
+					((self isOptionalEmptyLineMarker: statement) or: [self isOptionalNewLineMarker: statement]) ifFalse: [
 							self visitNode: statement.
-							statement ~= aNode statements last ifTrue: [
-								stream nextPut: $..
-								self newLine]]].
+              (statement ~= aNode statements last or: [config dotAtEndOfMethod and: [isMethodBlock] and: [(statement isKindOf: ReturnNode) not]]) ifTrue: [
+						    stream nextPut: $..
+						    statement ~= aNode statements last ifTrue: [self newLine]]]].
 			self printAllCommentsOf: statement lastStatement: statement = aNode statements last]].
 	
 	isMethodBlock ifFalse: [stream nextPut: $]]

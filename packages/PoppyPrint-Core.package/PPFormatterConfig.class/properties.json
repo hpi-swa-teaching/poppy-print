@@ -8,6 +8,7 @@
 	"instvars" : [
 		"spaceBeforeComma",
 		"spaceBeforePointInArray",
+		"dotAtEndOfMethod",
 		"formatToMaxLineWidth",
 		"maxLineWidth" ],
 	"name" : "PPFormatterConfig",
