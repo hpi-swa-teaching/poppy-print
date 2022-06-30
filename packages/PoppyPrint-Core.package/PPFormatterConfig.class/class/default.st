@@ -1,4 +1,4 @@
-as yet unclassified
+configs
 default
 	"Default is lazy initialized"
 

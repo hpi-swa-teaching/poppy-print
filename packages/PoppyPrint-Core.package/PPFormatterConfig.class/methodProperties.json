@@ -1,6 +1,9 @@
 {
 	"class" : {
-		"default" : "KD 6/15/2022 16:11" },
+		"default" : "KD 6/15/2022 16:11",
+		"getClassMethodsWithPragma:inClasses:" : "JW 6/30/2022 18:08",
+		"packageConfigForMethod:" : "JW 6/30/2022 18:28",
+		"personalizedConfig" : "JW 6/29/2022 21:59" },
 	"instance" : {
 		"spaceBeforeComma" : "KD 6/15/2022 16:07",
 		"spaceBeforeComma:" : "YH 6/2/2022 14:16",
