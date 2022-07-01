@@ -3,7 +3,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'PoppyPrint',
       #directory : 'packages',
-      #load : 'Tests',
+      #load : 'tests',
       #platforms : [ #squeak ],
       #useLatestMetacello : true
     }
