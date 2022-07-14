@@ -3,7 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"DotAtEndOfMethod",
+		"FormatToMaxLineWidth",
+		"MaxLineWidth",
+		"SpaceBeforeComma",
+		"SpaceBeforePointInArray" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"spaceBeforeComma",
