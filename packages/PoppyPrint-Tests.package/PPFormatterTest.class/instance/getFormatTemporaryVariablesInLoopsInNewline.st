@@ -1,0 +1,4 @@
+helper
+getFormatTemporaryVariablesInLoopsInNewline
+
+	^ PPFormatterConfig default formatTemporaryVariablesInLoopsInNewline: true

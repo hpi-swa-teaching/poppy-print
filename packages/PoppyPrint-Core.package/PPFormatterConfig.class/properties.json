@@ -4,6 +4,7 @@
 		 ],
 	"classvars" : [
 		"DotAtEndOfMethod",
+		"FormatTemporaryVariablesInLoopsInNewline",
 		"FormatToMaxLineWidth",
 		"MaxLineWidth",
 		"SpaceBeforeComma",
@@ -14,7 +15,8 @@
 		"spaceBeforePointInArray",
 		"dotAtEndOfMethod",
 		"formatToMaxLineWidth",
-		"maxLineWidth" ],
+		"maxLineWidth",
+		"formatTemporaryVariablesInLoopsInNewline" ],
 	"name" : "PPFormatterConfig",
 	"pools" : [
 		 ],

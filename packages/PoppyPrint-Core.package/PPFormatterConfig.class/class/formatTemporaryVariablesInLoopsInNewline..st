@@ -1,0 +1,4 @@
+accessing
+formatTemporaryVariablesInLoopsInNewline: aBoolean
+
+	FormatTemporaryVariablesInLoopsInNewline := aBoolean

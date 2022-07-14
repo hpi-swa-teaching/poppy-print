@@ -6,4 +6,5 @@ preferenceConfig
 		formatToMaxLineWidth: self formatToMaxLineWidth;
 		maxLineWidth: self maxLineWidth;
 		spaceBeforeComma: self spaceBeforeComma;
-		spaceBeforePointInArray: self spaceBeforePointInArray
+		spaceBeforePointInArray: self spaceBeforePointInArray;
+		formatTemporaryVariablesInLoopsInNewline: self formatTemporaryVariablesInLoopsInNewline
