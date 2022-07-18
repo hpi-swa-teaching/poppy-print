@@ -3,11 +3,18 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"DotAtEndOfMethod",
+		"FormatToMaxLineWidth",
+		"MaxLineWidth",
+		"SpaceBeforeComma",
+		"SpaceBeforePointInArray" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"spaceBeforeComma",
-		"spaceBeforePointInArray" ],
+		"spaceBeforePointInArray",
+		"dotAtEndOfMethod",
+		"formatToMaxLineWidth",
+		"maxLineWidth" ],
 	"name" : "PPFormatterConfig",
 	"pools" : [
 		 ],
