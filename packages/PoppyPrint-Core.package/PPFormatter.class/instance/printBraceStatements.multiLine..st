@@ -1,5 +1,5 @@
 helper
-evaluateBraceStatements: aNode multiLine: multiLine
+printBraceStatements: aNode multiLine: multiLine
 
 	aNode elements do: [:element | | isLast |
 		isLast := element = aNode elements last.

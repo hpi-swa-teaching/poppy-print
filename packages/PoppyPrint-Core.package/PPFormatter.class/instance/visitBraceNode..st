@@ -8,6 +8,6 @@ visitBraceNode: aNode
 	
 	self indent: (multiLine ifTrue: [1] ifFalse: [0]) around: [
 		multiLine ifTrue: [self newLine].
-		self evaluateBraceStatements: aNode multiLine: multiLine].
+		self printBraceStatements: aNode multiLine: multiLine].
 	
 	self stream nextPut: $}
