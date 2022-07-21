@@ -14,6 +14,8 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject with
 			noPattern: aBoolean
 			notifying: anObject
 			ifFail: nil.
+			
+	(methodNode hasPragma: #ppIgnore) ifTrue: [^ aString].
 	
 	formatter := self new
 		initForNode: methodNode;
