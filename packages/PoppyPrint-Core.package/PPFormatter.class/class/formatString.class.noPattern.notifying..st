@@ -6,4 +6,4 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject
 		class: aClass
 		noPattern: aBoolean
 		notifying: anObject
-		with: PPFormatterConfig personalizedConfig
+		with: PPFormatterConfig preferenceConfig
