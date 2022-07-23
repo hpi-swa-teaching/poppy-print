@@ -14,19 +14,12 @@ acceptTextInModel
 	the correction to it"
 	text := textMorph asText.
 	model ifNotNil: [
-		model contentsSymbol = #prettyPrint ifTrue: [
-			model editSelection = #newMessage ifTrue: [
-				text := PPFormatter
-					formatString: text asString
-					class: model selectedClass
-					noPattern: false
-					with: (PPFormatterConfig packageConfigForClass: model selectedClass)].
-			model editSelection = #editMessage ifTrue: [
-				text := PPFormatter
-					formatString: text asString
-					class: model selectedClass
-					noPattern: false
-					with: (PPFormatterConfig packageConfigForMethod: model selectedClass >> model selectedMessageName)]]].
+		(model contentsSymbol = #prettyPrint and: [model editSelection = #newMessage or: [model editSelection = #editMessage]]) ifTrue: [
+			text := PPFormatter
+				formatString: text asString
+				class: model selectedClass
+				noPattern: false
+				with: self getProjectConfig]].
 	unstyledAcceptText := styler unstyledTextFrom: text asText.
 	[^setTextSelector isNil or:
 		[setTextSelector numArgs = 2
