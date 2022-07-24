@@ -3,10 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ShouldUseDefaultAsPreferenceConfig",
 		"DotAtEndOfMethod",
 		"FormatToMaxLineWidth",
 		"MaxLineWidth",
+		"ShouldUseDefaultAsPreferenceConfig",
 		"SpaceBeforeComma",
 		"SpaceBeforePointInArray" ],
 	"commentStamp" : "",
