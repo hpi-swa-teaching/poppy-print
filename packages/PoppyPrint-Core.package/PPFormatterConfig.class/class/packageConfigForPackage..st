@@ -1,4 +1,4 @@
-configs
+config
 packageConfigForPackage: aPackage
 	
 	| classesInPackage ppConfigMethods config |

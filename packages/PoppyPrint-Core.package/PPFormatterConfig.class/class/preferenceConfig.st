@@ -1,4 +1,4 @@
-configs
+config
 preferenceConfig
 
 	self shouldUseDefaultAsPreferenceConfig ifTrue: [^ PPFormatterConfig default].

@@ -1,4 +1,4 @@
-configs
+config
 default
 	"Default is lazy initialized"
 

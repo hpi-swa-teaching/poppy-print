@@ -1,4 +1,4 @@
-configs
+config
 packageConfigForMethod: aCompiledMethod
 	
 	| classesInPackage ppConfigMethods config |
