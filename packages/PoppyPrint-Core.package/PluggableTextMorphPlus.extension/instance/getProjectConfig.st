@@ -3,8 +3,5 @@ getProjectConfig
 
 	model ifNil: [^ PPFormatterConfig default].
 	model editSelection = #newMessage ifTrue: [^ PPFormatterConfig packageConfigForClass: model selectedClass].
-	model editSelection = #editMessage ifTrue: [
-		model metaClassIndicated
-			ifTrue: [^ PPFormatterConfig packageConfigForMethod: model selectedClass class >> model selectedMessageName]
-			ifFalse: [^ PPFormatterConfig packageConfigForMethod: model selectedClass >> model selectedMessageName]].
+	model editSelection = #editMessage ifTrue: [^ PPFormatterConfig packageConfigForMethod: model selectedClassOrMetaClass >> model selectedMessageName].
 	^ PPFormatterConfig default.

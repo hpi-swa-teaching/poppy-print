@@ -1,0 +1,4 @@
+accessing
+shouldUseDefaultAsPreferenceConfig: aBoolean
+
+	ShouldUseDefaultAsPreferenceConfig := aBoolean
