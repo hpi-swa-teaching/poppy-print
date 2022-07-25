@@ -1,5 +1,5 @@
 helper
-accepting: aString expectingSorce: aSourceString andPretty: aPrettyString
+accepting: aString expectingSource: aSourceString andPretty: aPrettyString
 
 	| browser source pretty prettyPrinterClassSorce |
 	prettyPrinterClassSorce := (Behavior >> #prettyPrinterClass) getSourceFromFile string.

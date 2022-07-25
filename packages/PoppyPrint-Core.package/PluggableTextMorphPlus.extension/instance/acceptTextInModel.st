@@ -13,7 +13,7 @@ acceptTextInModel
 	that when #correctFrom:to:with: is received we can also apply
 	the correction to it"
 	text := textMorph asText.
-	model ifNotNil: [
+	(model isNil not and: [(model respondsTo: #contentsSymbol) and: [model respondsTo: #editSelection]]) ifTrue: [
 		(model contentsSymbol = #prettyPrint and: [model editSelection = #newMessage or: [model editSelection = #editMessage]]) ifTrue: [
 			text := PPFormatter
 				formatString: text asString
