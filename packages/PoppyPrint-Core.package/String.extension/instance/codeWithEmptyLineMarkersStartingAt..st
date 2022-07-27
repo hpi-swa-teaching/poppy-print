@@ -1,6 +1,6 @@
 *PoppyPrint-Core
 codeWithEmptyLineMarkersStartingAt: aNumber
-	" insert #ppEmptyLine symbols where double newlines are found, for later use by e.g. a formatter. Insert no markers earlier than aNumber "
+	" insert #ppOptionalEmptyLine and #ppEmptyLine symbols where double or more newlines are found, #optionalNewlines where single cr's are found, for later use by e.g. a formatter. Insert no markers earlier than aNumber "
 
 	| ranges crPositions write lastWasStatement |
 	ranges := Array streamContents: [:stream |
