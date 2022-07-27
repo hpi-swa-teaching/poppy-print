@@ -1,0 +1,14 @@
+{
+	"category" : "PoppyPrint-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"prettyPrinterClassSource" ],
+	"name" : "PPSimulationTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
