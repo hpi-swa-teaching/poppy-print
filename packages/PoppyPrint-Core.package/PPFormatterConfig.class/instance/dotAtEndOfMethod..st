@@ -1,4 +1,4 @@
 accessing
-dotAtEndOfMethod: anObject
+dotAtEndOfMethod: aBoolean
 
-	dotAtEndOfMethod := anObject
+	dotAtEndOfMethod := aBoolean 
