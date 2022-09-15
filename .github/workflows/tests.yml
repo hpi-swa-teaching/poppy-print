@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]
         smalltalk:
           #- Squeak64-trunk  # to be reenabled soon
           - Squeak64-5.3
