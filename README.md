@@ -1,6 +1,7 @@
 # Poppy Print
 
 ![CI](https://github.com/hpi-swa-teaching/poppy-print/actions/workflows/tests.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/hpi-swa-teaching/poppy-print/badge.svg?branch=master)](https://coveralls.io/github/hpi-swa-teaching/poppy-print?branch=master)
 
 A small, opinionated pretty printer for Squeak/Smalltalk. Tested with Squeak6-trunk and Squeak5.3.
 
