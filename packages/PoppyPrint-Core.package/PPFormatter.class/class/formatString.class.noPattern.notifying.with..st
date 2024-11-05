@@ -12,7 +12,7 @@ formatString: aString class: aClass noPattern: aBoolean notifying: anObject with
 		parse: (aString string codeWithEmptyLineMarkersNoPattern: aBoolean)
 			class: aClass
 			noPattern: aBoolean
-			notifying: anObject
+			notifying: nil
 			ifFail: nil.
 			
 	(methodNode hasPragma: #ppIgnore) ifTrue: [^ aString].
