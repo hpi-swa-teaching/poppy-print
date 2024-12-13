@@ -1,0 +1,26 @@
+[
+	SquotCypressMapper {
+		#package : MCPackage {
+			#name : 'BaselineOfPoppyPrint'
+		},
+		#path : FSAbsolutePath [
+			'packages'
+		]
+	},
+	SquotCypressMapper {
+		#package : MCPackage {
+			#name : 'PoppyPrint-Tests'
+		},
+		#path : FSAbsolutePath [
+			'packages'
+		]
+	},
+	SquotCypressMapper {
+		#package : MCPackage {
+			#name : 'PoppyPrint-Core'
+		},
+		#path : FSAbsolutePath [
+			'packages'
+		]
+	}
+]
