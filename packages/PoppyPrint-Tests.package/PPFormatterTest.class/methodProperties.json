@@ -23,6 +23,7 @@
 		"testEmptyLineInCaseOf" : "tobe 3/11/2021 10:54",
 		"testEmptyLinesBetweenComments" : "tobe 3/11/2021 11:35",
 		"testEmptyMethod" : "tobe 3/10/2021 14:58",
+		"testGetProjectConfigOfMethod" : "JW 7/24/2022 22:27",
 		"testGithubIssue7" : "tobe 3/11/2021 11:15",
 		"testInlineCommentWithNewline" : "KD 6/15/2022 16:11",
 		"testKeepEmptyLines" : "tobe 3/10/2021 14:58",
