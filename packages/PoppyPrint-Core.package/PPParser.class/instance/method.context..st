@@ -22,7 +22,7 @@ method: doit context: ctxt
 	blk := parseNode.
 	"CHANGE"
 	
-	self includeGenerated ifTrue: [doit ifTrue: [blk returnLast] ifFalse: [blk returnSelfIfNoOther: encoder]].
+	self includeGenerated ifTrue: [doit ifTrue: [blk returnLast] ifFalse: [blk returnSelfIfNoOther]].
 	"END CHANGE"
 	
 	hereType == #doIt ifFalse: [^ self expected: 'Nothing more'].
