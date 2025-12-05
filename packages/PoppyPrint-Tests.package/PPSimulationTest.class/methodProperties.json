@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"accepting:expectingSource:andPretty:" : "JW 7/25/2022 18:24",
+		"close:" : "JW 7/24/2022 19:57",
+		"getBrowser" : "JW 7/24/2022 19:00",
+		"getPrettyContentOf:" : "JW 7/24/2022 19:31",
+		"getSourceContentOf:" : "JW 7/24/2022 19:31",
+		"setMethodContentsTo:of:using:" : "JW 7/24/2022 19:33",
+		"setUp" : "JW 7/25/2022 18:23",
+		"tearDown" : "JW 7/25/2022 18:24",
+		"testProjectVsPersonalizedConfig1" : "JW 7/25/2022 13:40",
+		"testProjectVsPersonalizedConfig2" : "JW 7/25/2022 13:40" } }
